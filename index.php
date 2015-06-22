@@ -1,1 +1,0 @@
-<?php echo "Cadena de texto"; ?>	
