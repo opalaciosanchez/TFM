@@ -1,30 +1,19 @@
-$(document).ready(function () {
-	
-	var $contenido = $("#contenido");
-	var $consulta  = $("#clave").val();
-	var $solr;
-	
-	$('#buscar').on('click', function() {
-		$solr($consulta);
+
+function solr() {
+
+	$.ajax({
+		type: 'GET',	
+		url: 'http://www.zaragoza.es/buscador/select?',
+		data: {'wt':'json', 'q':'title:esclerosis AND category:Asociaciones'},
+		success: function(data) { 
+			$.each(data, function(k,v) {
+				$('#contenido').append('<p>' + k +'</p>');
+			});
+		},
+		dataType: 'jsonp',
+		jsonp: 'json.wrf',
+		error: function(xhr) {
+			alert(xhr.responseText);
+		} 
 	});
-	
-	$solr = function (consulta) {
-		$.ajax({
-			type: "GET",
-			dataType: "json",
-			url: "http://www.zaragoza.es/ciudad/risp/buscar_Risp?q=asociaciones",
-			success: function(datos) {
-				
-				$.each(datos, function (clave,valor) {
-					
-					$contenido.append("<h3>" + clave + "</h3>");
-				
-				});
-			},
-			error: function(xhr) {
-				alert(xhr.responseText);
-			}
-		});
-	};
-	
-});
+};

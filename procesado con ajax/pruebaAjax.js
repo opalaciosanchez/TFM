@@ -2,15 +2,10 @@ $(document).ready(function() {
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: "http://www.zaragoza.es/api/recurso/dataset?start=0&rows=1",
+        url: "http://www.zaragoza.es/buscador/select?wt=json&q=title:esclerosis%20text:esclerosis%20AND%20-tipocontenido_s:estatico%20AND%20category:Asociaciones",
         success: function(data) {
             $.each(data, function(k,v) {
-                if (k = "result") {
-                    $.each($(this), function(campo,valor) {
-                        $("#lista").append("<li>Campo: " + campo + " Valor: " + valor + "</li>");
-                    });
-                }
-
+                $("#lista").append("<li>Campo: " + k + " Valor: " + v + "</li>");
             });
         },
         error: function (xhr) {
