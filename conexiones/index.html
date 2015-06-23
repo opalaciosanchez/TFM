@@ -3,23 +3,18 @@
 	<head>
 		<meta charset="utf8"/>
 		<title>Sanidad Datos abiertos Prueba</title>
-		<script src="solr.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	</head>
 	<body>
 		<section id="solr">
 		<h2>Conectando con Zaragoza datos abiertos</h2>
-		<label for="clave">Palabra clave</label>
-		<input type="search" id="clave" name="clave" placeholder="¿qué quieres buscar?" autofocus/>
+		<label for="palabra">Palabra clave</label>
+		<input type="search" id="palabra" name="palabra" placeholder="¿Qué quieres buscar?" autofocus/>
 		<button id="buscar" name="buscar">Buscar</button>
 		<article id="contenido">
 			
 		</article>
 		</section>
-		<script type="text/javascript">
-		$(document).ready(function() {
-			solr();
-		});
-		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="solr.js"></script>
 	</body>
 </html>
