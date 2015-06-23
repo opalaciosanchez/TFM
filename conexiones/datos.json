@@ -1,1 +1,52 @@
-{"responseHeader":{"status":0,"QTime":1,"params":{"wt":"json","q":"title:esclerosis text:esclerosis AND -tipocontenido_s:estatico AND category:Asociaciones"}},"response":{"numFound":3,"start":0,"docs":[{"id":"asociacion-767","uri":"http://www.zaragoza.es/ciudadania/gobierno-abierto/participar/detalle_Asociacion?id=767","title":"ASOCIACIÓN ARAGONESA DE ESCLEROSIS MÚLTIPLE","language":"es","presidente_s":"JOSÉ-Mª. FRANCO BUERA","cif_s":"G50523265","mail_s":"fadema@fadema.org","web_s":"","direccion_s":"C/ Pablo Ruiz Picasso 64","telefono_s":"742767","texto_t":"<p>C/ Pablo Ruiz Picasso 64Tel: 742767</p>","last_modified":"1993-11-25T23:00:00Z","text":["ASOCIACIÓN ARAGONESA DE ESCLEROSIS MÚLTIPLE","Junta Municipal Actur - Rey Fernando","JOSÉ-Mª. FRANCO BUERAG50523265C/ Pablo Ruiz Picasso 64fadema@fadema.orgC/ Pablo Ruiz Picasso 64742767","Entidades Ciudadanas. De discapacitados y para la ayuda mutua de enfermos.","Interés Ciudadano"],"content_type":["HTML"],"category":["Asociaciones","Participación Ciudadana"],"junta_smultiple":["Junta Municipal Actur - Rey Fernando"],"categoria_smultiple":["Entidades Ciudadanas. De discapacitados y para la ayuda mutua de enfermos.","Interés Ciudadano"]},{"id":"asociacion-1912","uri":"http://www.zaragoza.es/ciudadania/gobierno-abierto/participar/detalle_Asociacion?id=1912","title":"ASOCIACIÓN ARAGONESA DE ESCLEROSIS LATERAL AMIOTRÓFICA (ARAELA)","language":"es","presidente_s":"JESÚS LABARTA ECHEGOYEN","cif_s":"G50812965","mail_s":"ARAELA@terra.es","web_s":"www.araela.org","direccion_s":"C/ Estación nº 5, local","telefono_s":"133868","texto_t":"<p>C/ Estación nº 5, localTel: 133868</p>","last_modified":"1999-11-11T23:00:00Z","text":["ASOCIACIÓN ARAGONESA DE ESCLEROSIS LATERAL AMIOTRÓFICA (ARAELA)","Junta Municipal El Rabal","JESÚS LABARTA ECHEGOYENG50812965C/ Estación nº 5, localARAELA@terra.eswww.araela.orgC/ Estación nº 5, local133868","Entidades Ciudadanas. De discapacitados y para la ayuda mutua de enfermos.","Interés Ciudadano"],"content_type":["HTML"],"category":["Asociaciones","Participación Ciudadana"],"junta_smultiple":["Junta Municipal El Rabal"],"categoria_smultiple":["Entidades Ciudadanas. De discapacitados y para la ayuda mutua de enfermos.","Interés Ciudadano"]},{"id":"asociacion-2393","uri":"http://www.zaragoza.es/ciudadania/gobierno-abierto/participar/detalle_Asociacion?id=2393","title":"FUNDACIÓN ARAGONESA DE ESCLEROSIS MÚLTIPLE (FADEMA)","language":"es","presidente_s":"JOSÉ-MARÍA FRANCO BUERA","cif_s":"G50885631","mail_s":"fadema@fadema.org","web_s":"","direccion_s":"C/ Pablo Ruiz Picasso 64","telefono_s":"512001","texto_t":"<p>C/ Pablo Ruiz Picasso 64Tel: 512001</p>","last_modified":"2003-04-03T22:00:00Z","text":["FUNDACIÓN ARAGONESA DE ESCLEROSIS MÚLTIPLE (FADEMA)","Junta Municipal Actur - Rey Fernando","JOSÉ-MARÍA FRANCO BUERAG50885631C/ Pablo Ruiz Picasso 64fadema@fadema.orgC/ Pablo Ruiz Picasso 64512001","Entidades Ciudadanas. De discapacitados y para la ayuda mutua de enfermos.","Interés Ciudadano"],"content_type":["HTML"],"category":["Asociaciones","Participación Ciudadana"],"junta_smultiple":["Junta Municipal Actur - Rey Fernando"],"categoria_smultiple":["Entidades Ciudadanas. De discapacitados y para la ayuda mutua de enfermos.","Interés Ciudadan
+{
+  "responseHeader": {
+    "status": ,
+    "QTime": ,
+    "params": {
+      "wt": "",
+      "q": ""
+    }
+  },
+  "response": {
+    "numFound": ,
+    "start": ,
+    "docs": [
+      
+    ]
+  },
+  "spellcheck": {
+    "suggestions": [
+      "",
+      {
+        "numFound": ,
+        "startOffset": ,
+        "endOffset": ,
+        "suggestion": [
+          ""
+        ]
+      },
+      "",
+      {
+        "numFound": ,
+        "startOffset": ,
+        "endOffset": ,
+        "suggestion": [
+          ""
+        ]
+      },
+      "",
+      {
+        "numFound": ,
+        "startOffset": ,
+        "endOffset": ,
+        "suggestion": [
+        ""
+        ]
+      },
+      "collation",
+      ""
+    ]
+  }
+}
+
+

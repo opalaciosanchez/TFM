@@ -53,28 +53,32 @@ $categoria.on('click', function () {
 
 // función que muestra los resultados
 function resultados(data) { 
-	$.each(data.response, function() {
-		$.each(this, function () {
-			$.each(this, function (k,v) {		
-				switch (k) {
-					case 'title':
-						$contenido.append('<h3>' + v + '</h3>');
-						break;
-					case 'direccion_s':
-						$contenido.append('<p><b>Dirección: </b>' + v + '</p>');
-						break;
-					case 'telefono_s':
-						$contenido.append('<p><b>Teléfono: </b>' + v + '</p>');
-						break;
-					case 'mail_s':
-						$contenido.append('<p><b>Email: </b>' + v + '</p>');
-						break;
-					default:
-						break;
-				}				
+	if (data.response.numFound !== 0) {
+		$.each(data.response, function() {
+			$.each(this, function () {
+				$.each(this, function (k,v) {		
+					switch (k) {
+						case 'title':
+							$contenido.append('<h3>' + v + '</h3>');
+							break;
+						case 'direccion_s':
+							$contenido.append('<p><b>Dirección: </b>' + v + '</p>');
+							break;
+						case 'telefono_s':
+							$contenido.append('<p><b>Teléfono: </b>' + v + '</p>');
+							break;
+						case 'mail_s':
+							$contenido.append('<p><b>Email: </b>' + v + '</p>');
+							break;
+						default:
+							break;
+					}				
+				});
 			});
 		});
-	});
+	} else {
+		$contenido.append('<h4>No se han obtenido resultados en la búsqueda</h4>');
+	}
 	$palabra.val("");
 }
 
