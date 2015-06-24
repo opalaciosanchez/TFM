@@ -1,0 +1,35 @@
+{
+   "type":"FeatureCollection",
+   "crs":{
+      "type":"EPSG",
+      "properties":{
+         "code":23030
+      }
+   },
+   "properties":{
+      "title":"Farmacias",
+      "icon":"http:\/\/www.zaragoza.es\/contenidos\/iconos\/sanidadYconsumo.png",
+      "link":"http:\/\/www.zaragoza.es\/ciudad\/idezar\/farmacias.htm",
+      "description":"Farmacias"
+   },
+   "features":[
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               676173.88,
+               4613708.4
+            ]
+         },
+         "properties":{
+            "title":"Farmacia Querejeta Coliz, Ana",
+            "link":"http:\/\/www.zaragoza.es\/ciudad\/centros\/detalle_Centro?id=8735",
+            "description":"C/ Ramón Pignatelli, 17 C.P. 50004  Teléfono: 976438342 Farmacia de guardia el 23-06-2015 Abiertas de 9:15 h. a 9:15 h. del día siguiente en el sector Sector Centro-Esquina Ramón y Cajal",
+            "category":"",
+            "date":"",
+            "icon":"http:\/\/www.zaragoza.es\/contenidos\/iconos\/farmaciaguardia.png"
+         }
+      } 
+   ]
+}
