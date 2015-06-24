@@ -1,11 +1,11 @@
 <?php
-
+require_once 'includes/functions.php';
 // capturamos las variables enviadas. Falta por asegurar la petición
-$farmacia = $_POST['palabra'];
+// $farmacia = $_POST['palabra'];
 $fecha = $_POST['datepicker'];
 
 // función que evalúa si hay que mostrar farmacias de guardia o no
-function procesadoFarmacia($farmacia,$fecha) {
+function procesadoFarmacia($fecha) {
 	// si hay una fecha, se lanza el parámetro fecha. Si no, se muestran todas
 	if ($fecha != "") {
 		$url = "http://www.zaragoza.es/georref/json/hilo/farmacias_Equipamiento?georss_deguardia=s&georss_fecha=" . $fecha;
@@ -16,14 +16,24 @@ function procesadoFarmacia($farmacia,$fecha) {
 	
 }
 
-//Executes the URL and saves the content (json) in the variable.
-$url = procesadoFarmacia($farmacia,$fecha);
+// Ejacutamos la función de comprobación de fecha en la URL y guardamos la salida (json) en $datos.
+$url = procesadoFarmacia($fecha);
 
-$content = file_get_contents($url);
-if($content) {
-  $result = json_decode($content,true);
+$datos = file_get_contents($url);
+if($datos) {
 
-	//prints the content of array on the page. Instead perform the operation you ae interested.
-	var_dump($result);
+// una vez obtenido el contenido de la petición, damos salida por pantalla en formato legible
+  $resultado = json_decode($datos,true);
+
+/*	print "<pre>";
+	print_r($resultado);
+	print "</pre>";*/
+
+	// mostramos ya con formato la salida
+	include 'includes/encabezado.php';
+	salidaDatos($resultado);
+	include 'includes/pie.php';
+
 }
+
 ?>

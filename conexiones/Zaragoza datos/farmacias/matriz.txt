@@ -1,0 +1,208 @@
+Array
+(
+    [type] => FeatureCollection
+    [crs] => Array
+        (
+            [type] => EPSG
+            [properties] => Array
+                (
+                    [code] => 23030
+                )
+
+        )
+
+    [properties] => Array
+        (
+            [title] => Farmacias
+            [icon] => http://www.zaragoza.es/contenidos/iconos/sanidadYconsumo.png
+            [link] => http://www.zaragoza.es/ciudad/idezar/farmacias.htm
+            [description] => Farmacias
+        )
+
+    [features] => Array
+        (
+            [0] => Array
+                (
+                    [type] => Feature
+                    [geometry] => Array
+                        (
+                            [type] => Point
+                            [coordinates] => Array
+                                (
+                                    [0] => 674852.17
+                                    [1] => 4614257.44
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [title] => Farmacia Gispert Escorihuela, María Pilar
+                            [link] => http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=8754
+                            [description] => C/ Juan Bautista del Mazo, 30 C.P. 50003  Teléfono: 976431305 Farmacia de guardia el 24-06-2015 Abiertas de 9:15 h. a 9:15 h. del día siguiente en el sector Sector Almozara- Química
+                            [category] => 
+                            [date] => 
+                            [icon] => http://www.zaragoza.es/contenidos/iconos/farmaciaguardia.png
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [type] => Feature
+                    [geometry] => Array
+                        (
+                            [type] => Point
+                            [coordinates] => Array
+                                (
+                                    [0] => 674420.45
+                                    [1] => 4611830.75
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [title] => Farmacia Gil Hernández, María Amparo
+                            [link] => http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=8786
+                            [description] => Avda. Juan Pablo II, 76 C.P. 50009  Teléfono: 976755896 Farmacia de guardia el 24-06-2015 Abiertas de 9:15 h. a 9:15 h. del día siguiente en el sector Sector Romareda-Esquina C/ Condes de Aragón -Seminario
+                            [category] => 
+                            [date] => 
+                            [icon] => http://www.zaragoza.es/contenidos/iconos/farmaciaguardia.png
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [type] => Feature
+                    [geometry] => Array
+                        (
+                            [type] => Point
+                            [coordinates] => Array
+                                (
+                                    [0] => 678064.76
+                                    [1] => 4612375.93
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [title] => Farmacia Torres Ferrandez, Luis
+                            [link] => http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=8929
+                            [description] => C/ María de Aragón, 22 C.P. 50013  Teléfono: 976599043 Farmacia de guardia el 24-06-2015 Abiertas de 9:15 h. a 9:15 h. del día siguiente en el sector Sector Las Fuentes- Frente Parque Torre Ramona
+                            [category] => 
+                            [date] => 
+                            [icon] => http://www.zaragoza.es/contenidos/iconos/farmaciaguardia.png
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [type] => Feature
+                    [geometry] => Array
+                        (
+                            [type] => Point
+                            [coordinates] => Array
+                                (
+                                    [0] => 676457
+                                    [1] => 4611941.51
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [title] => Farmacia Gonzalez Muniesa, Maria Mercedes
+                            [link] => http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=8792
+                            [description] => C/ Francisco Pradilla, 29 C.P. 50007  Teléfono: 976377536 Farmacia de guardia el 24-06-2015 Abiertas de 9:15 h. a 9:15 h. del día siguiente en el sector Sector San José- Entrada por Pº Cuéllar
+                            [category] => 
+                            [date] => 
+                            [icon] => http://www.zaragoza.es/contenidos/iconos/farmaciaguardia.png
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [type] => Feature
+                    [geometry] => Array
+                        (
+                            [type] => Point
+                            [coordinates] => Array
+                                (
+                                    [0] => 674322.09
+                                    [1] => 4613523.57
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [title] => Farmacia Andrés Magallón, Santiago
+                            [link] => http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=8679
+                            [description] => Avda. de Madrid, 185 C.P. 50017  Teléfono: 976332929-976347759 Farmacia de guardia el 24-06-2015 Abiertas de 9:15 h. a 9:15 h. del día siguiente en el sector Sector Delicias
+                            [category] => 
+                            [date] => 
+                            [icon] => http://www.zaragoza.es/contenidos/iconos/farmaciaguardia.png
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [type] => Feature
+                    [geometry] => Array
+                        (
+                            [type] => Point
+                            [coordinates] => Array
+                                (
+                                    [0] => 678454.66
+                                    [1] => 4614348.45
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [title] => Farmacia Azagra Garde, Maria
+                            [link] => http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=8693
+                            [description] => C/ Pintor Manuel Viola, 4 C.P. 50014  Teléfono: 976475479 Farmacia de guardia el 24-06-2015 Abiertas de 9:15 h. a 9:15 h. del día siguiente en el sector Sector Avda. Cataluña-Barrio La Jota
+                            [category] => 
+                            [date] => 
+                            [icon] => http://www.zaragoza.es/contenidos/iconos/farmaciaguardia.png
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [type] => Feature
+                    [geometry] => Array
+                        (
+                            [type] => Point
+                            [coordinates] => Array
+                                (
+                                    [0] => 676342.13
+                                    [1] => 4613021.57
+                                )
+
+                        )
+
+                    [properties] => Array
+                        (
+                            [title] => Farmacia Gasco Lagunas, Ana María
+                            [link] => http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=8783
+                            [description] => Pº. Constitución, 6 C.P. 50008  Teléfono: 976229947 Farmacia de guardia el 24-06-2015 Abiertas de 9:15 h. a 9:15 h. del día siguiente en el sector Sector Centro-Junto a Plaza Paraíso
+                            [category] => 
+                            [date] => 
+                            [icon] => http://www.zaragoza.es/contenidos/iconos/farmaciaguardia.png
+                        )
+
+                )
+
+        )
+
+)
