@@ -8,9 +8,9 @@ $fecha = $_POST['datepicker'];
 function procesadoFarmacia($fecha) {
 	// si hay una fecha, se lanza el parámetro fecha. Si no, se muestran todas
 	if ($fecha != "") {
-		$url = "http://www.zaragoza.es/georref/json/hilo/farmacias_Equipamiento?georss_deguardia=s&georss_fecha=" . $fecha;
+		$url = "http://www.zaragoza.es/georref/json/hilo/farmacias_Equipamiento?srsname=wgs84&georss_deguardia=s&georss_fecha=" . $fecha;
 	} else {
-		$url = "http://www.zaragoza.es/georref/json/hilo/farmacias_Equipamiento?";
+		$url = "http://www.zaragoza.es/georref/json/hilo/farmacias_Equipamiento?srsname=wgs84";
 	}
 	return $url;
 	

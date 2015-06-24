@@ -1,0 +1,94 @@
+{
+   "responseHeader":{
+      "status":0,
+      "QTime":8,
+      "params":{
+         "wt":"json",
+         "rows":"1",
+         "q":"category:Recursos AND title:Centro de Salud"
+      }
+   },
+   "response":{
+      "numFound":421,
+      "start":0,
+      "docs":[
+         {
+            "id":"recurso-9087",
+            "uri":"http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=9087",
+            "title":"Centro de Salud Romareda",
+            "language":"es",
+            "description":"",
+            "publico_b":true,
+            "calle_t":"C/ Condes de Aragón, 30",
+            "telefono_s":"976458222",
+            "x_coordinate":674336.0625,
+            "y_coordinate":4611726.5,
+            "coordenadas_p_0_coordinate":41.63639092309509,
+            "coordenadas_p_1_coordinate":-0.9081308650290948,
+            "coordenadas_p":"41.63639092309509,-0.9081308650290948",
+            "texto_t":"<p>Dirección: C/ Condes de Aragón, 30 Teléfono: 976458222</p>",
+            "last_modified":"2015-05-29T09:42:36Z",
+            "subtemas_smultiple":[
+               "Centros de Salud"
+            ],
+            "text":[
+               "Centro de Salud Romareda",
+               "Salud Pública y Consumo",
+               "Centros de Salud",
+               "",
+               "",
+               "Otras administraciones",
+               "Junta Municipal Universidad"
+            ],
+            "titularidad_smultiple":[
+               "Otras administraciones"
+            ],
+            "content_type":[
+               "HTML"
+            ],
+            "category":[
+               "Recursos"
+            ],
+            "junta_smultiple":[
+               "Junta Municipal Universidad"
+            ],
+            "temas_smultiple":[
+               "Salud Pública y Consumo"
+            ]
+         }
+      ]
+   },
+   "spellcheck":{
+      "suggestions":[
+         "Recursos",
+         {
+            "numFound":1,
+            "startOffset":9,
+            "endOffset":17,
+            "suggestion":[
+               "recursos"
+            ]
+         },
+         "Centro",
+         {
+            "numFound":1,
+            "startOffset":28,
+            "endOffset":34,
+            "suggestion":[
+               "centro"
+            ]
+         },
+         "Salud",
+         {
+            "numFound":1,
+            "startOffset":38,
+            "endOffset":43,
+            "suggestion":[
+               "salud"
+            ]
+         },
+         "collation",
+         "category:recursos AND title:centro de salud"
+      ]
+   }
+}

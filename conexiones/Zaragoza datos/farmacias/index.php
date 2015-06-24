@@ -23,7 +23,7 @@ require_once 'includes/functions.php';
 		<input type="submit" id="buscar" name="buscar" value="Buscar Farmacia"/>
 		</form>
 		<h2>SPARQL</h2>
-		<form name="SPARQL" id="SPARQL" action="consultaSPARQL.php" method="POST">
+		<form name="SPARQL" id="SPARQL" action="SPARQL/consultaSPARQL.php" method="POST">
 			<p>
 				<input type="submit" id="buscarSPARQL" name="buscarSPARQL" value="Buscar Farmacia"/>
 			</p>
@@ -34,6 +34,6 @@ require_once 'includes/functions.php';
 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/start/jquery-ui.css">
 		<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-		<script src="fecha.js"></script>
+		<script src="script/fecha.js"></script>
 </body>
 </html>
