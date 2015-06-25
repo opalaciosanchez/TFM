@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Sanidad Datos abiertos Prueba</title>
+        <style type="text/css">
+            html, body, section, #map {
+                height: 100%;
+                margin: 1em;
+                padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+    <section id="solr">
+    	<h2>Conectando con Zaragoza datos abiertos</h2>
+		<label for="palabra">Palabra clave de búsqueda</label>
+		<input type="text" id="palabra" name="palabra" placeholder="nombre, distrito..." autofocus/>
+		<button id="buscar" name="buscar">Buscar Centro de salud</button>
+		<div id="categorias">
+			<h3>Búsqueda por Barrios</h3>
+			<p class="categoria"><a href=#>Delicias</a></p>
+			<p class="categoria"><a href=#>Universidad</a></p>
+			<p class="categoria"><a href=#>Isabel</a></p>
+			<p class="categoria"><a href=#>Actur</a></p>
+			<p class="categoria"><a href=#>Casablanca</a></p>
+			<p class="categoria"><a href=#>Miralbueno</a></p>
+			<p class="categoria"><a href=#>Las Fuentes</a></p>
+		</div>
+		<div id="contenido">
+			
+		</div>
+        <div id="map"></div>
+ 
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+            var element = document.getElementById("map");
+ 
+            /*
+            Build list of map types.
+            You can also use var mapTypeIds = ["roadmap", "satellite", "hybrid", "terrain", "OSM"]
+            but static lists sucks when google updates the default list of map types.
+            */
+            var mapTypeIds = [];
+            for(var type in google.maps.MapTypeId) {
+                mapTypeIds.push(google.maps.MapTypeId[type]);
+            }
+            mapTypeIds.push("OSM");
+ 
+            var map = new google.maps.Map(element, {
+                center: new google.maps.LatLng(41.66672740776646, -0.8365180139132136),
+                zoom: 30,
+                mapTypeId: "OSM",
+                mapTypeControlOptions: {
+                    mapTypeIds: mapTypeIds
+                }
+            });
+ 
+            map.mapTypes.set("OSM", new google.maps.ImageMapType({
+                getTileUrl: function(coord, zoom) {
+                    // See above example if you need smooth wrapping at 180th meridian
+                    return "http://tile.openstreetmap.org/" + zoom + "/" + coord.x + "/" + coord.y + ".png";
+                },
+                tileSize: new google.maps.Size(256, 256),
+                name: "OpenStreetMap",
+                maxZoom: 18
+            }));
+        </script>
+    </section>
+    </body>
+</html>

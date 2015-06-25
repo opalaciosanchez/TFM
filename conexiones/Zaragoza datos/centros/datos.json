@@ -1,94 +1,99 @@
 {
-   "responseHeader":{
-      "status":0,
-      "QTime":8,
-      "params":{
-         "wt":"json",
-         "rows":"1",
-         "q":"category:Recursos AND title:Centro de Salud"
+  "responseHeader": {
+    "status": 0,
+    "QTime": 7,
+    "params": {
+      "wt": "json",
+      "rows": "20",
+      "q": "title:salud AND category:Recursos AND barrio_smultiple:\"Santa Isabel\""
+    }
+  },
+  "response": {
+    "numFound": 1,
+    "start": 0,
+    "docs": [
+      {
+        "id": "recurso-9116",
+        "uri": "http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=9116",
+        "title": "Centro de Salud Santa Isabel",
+        "language": "es",
+        "description": "",
+        "publico_b": true,
+        "calle_t": "C/ Alameda (Bº Santa Isabel)",
+        "telefono_s": "976 572102",
+        "fax_s": "976 571470",
+        "x_coordinate": 680216.375,
+        "y_coordinate": 4615242.0,
+        "coordenadas_p_0_coordinate": 41.66672740776646,
+        "coordenadas_p_1_coordinate": -0.8365180139132136,
+        "coordenadas_p": "41.66672740776646,-0.8365180139132136",
+        "texto_t": "<p>Dirección: C/ Alameda (Bº Santa Isabel) Teléfono: 976 572102</p>",
+        "last_modified": "2015-05-29T09:42:36Z",
+        "subtemas_smultiple": [
+          "Centros de Salud"
+        ],
+        "text": [
+          "Centro de Salud Santa Isabel",
+          "Salud Pública y Consumo",
+          "Centros de Salud",
+          "",
+          "",
+          "Otras administraciones",
+          "Santa Isabel",
+          "Junta Municipal Santa Isabel"
+        ],
+        "titularidad_smultiple": [
+          "Otras administraciones"
+        ],
+        "content_type": [
+          "HTML"
+        ],
+        "category": [
+          "Recursos"
+        ],
+        "junta_smultiple": [
+          "Junta Municipal Santa Isabel"
+        ],
+        "barrio_smultiple": [
+          "Santa Isabel"
+        ],
+        "temas_smultiple": [
+          "Salud Pública y Consumo"
+        ]
       }
-   },
-   "response":{
-      "numFound":421,
-      "start":0,
-      "docs":[
-         {
-            "id":"recurso-9087",
-            "uri":"http://www.zaragoza.es/ciudad/centros/detalle_Centro?id=9087",
-            "title":"Centro de Salud Romareda",
-            "language":"es",
-            "description":"",
-            "publico_b":true,
-            "calle_t":"C/ Condes de Aragón, 30",
-            "telefono_s":"976458222",
-            "x_coordinate":674336.0625,
-            "y_coordinate":4611726.5,
-            "coordenadas_p_0_coordinate":41.63639092309509,
-            "coordenadas_p_1_coordinate":-0.9081308650290948,
-            "coordenadas_p":"41.63639092309509,-0.9081308650290948",
-            "texto_t":"<p>Dirección: C/ Condes de Aragón, 30 Teléfono: 976458222</p>",
-            "last_modified":"2015-05-29T09:42:36Z",
-            "subtemas_smultiple":[
-               "Centros de Salud"
-            ],
-            "text":[
-               "Centro de Salud Romareda",
-               "Salud Pública y Consumo",
-               "Centros de Salud",
-               "",
-               "",
-               "Otras administraciones",
-               "Junta Municipal Universidad"
-            ],
-            "titularidad_smultiple":[
-               "Otras administraciones"
-            ],
-            "content_type":[
-               "HTML"
-            ],
-            "category":[
-               "Recursos"
-            ],
-            "junta_smultiple":[
-               "Junta Municipal Universidad"
-            ],
-            "temas_smultiple":[
-               "Salud Pública y Consumo"
-            ]
-         }
-      ]
-   },
-   "spellcheck":{
-      "suggestions":[
-         "Recursos",
-         {
-            "numFound":1,
-            "startOffset":9,
-            "endOffset":17,
-            "suggestion":[
-               "recursos"
-            ]
-         },
-         "Centro",
-         {
-            "numFound":1,
-            "startOffset":28,
-            "endOffset":34,
-            "suggestion":[
-               "centro"
-            ]
-         },
-         "Salud",
-         {
-            "numFound":1,
-            "startOffset":38,
-            "endOffset":43,
-            "suggestion":[
-               "salud"
-            ]
-         },
-         "collation",
-         "category:recursos AND title:centro de salud"
-      ]
-   }
+    ]
+  },
+  "spellcheck": {
+    "suggestions": [
+      "Recursos",
+      {
+        "numFound": 1,
+        "startOffset": 25,
+        "endOffset": 33,
+        "suggestion": [
+          "recursos"
+        ]
+      },
+      "Santa",
+      {
+        "numFound": 1,
+        "startOffset": 56,
+        "endOffset": 61,
+        "suggestion": [
+          "santa"
+        ]
+      },
+      "Isabel",
+      {
+        "numFound": 1,
+        "startOffset": 62,
+        "endOffset": 68,
+        "suggestion": [
+          "isabel"
+        ]
+      },
+      "collation",
+      "title:salud AND category:recursos AND barrio_smultiple:\"santa isabel\""
+    ]
+  }
 }
