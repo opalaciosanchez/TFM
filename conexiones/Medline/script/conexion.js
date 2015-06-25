@@ -17,13 +17,27 @@ var $URL = 'http://wsearch.nlm.nih.gov/ws/query?';
 $buscar.on('click', function () {
 	// eliminamos el contenido anterior
 	alert("funciona el botón");
-	
+	// $palabra.val("");
+	$.ajax({
+		type: 'GET',
+		url: $URL,
+		// insertamos las variables que realizan la consulta. ATENCIÓN A LOS ESPACIOS entre elementos
+		data: {
+			'db':'healthTopicsSpanish', 
+			'term':'title:' + $palabra.val() 
+		},
+		success: resultados,
+		dataType: 'jsonp xml',
+		jsonp: 'json.wrf',
+		error: function(jqxhr, textStatus, errorThrown)  {
+        	alert("Error: " + textStatus + " : " + errorThrown)
+	     }
+   });
 });
 
-
-
-// función que muestra los resultados
-function resultados(data) { 
+/* CATEGORIAS */
+/*$categoria.on('click', function () {
+	// eliminamos el contenido anterior
 	$contenido.text("");
 	$.ajax({
 		type: 'GET',
@@ -32,7 +46,7 @@ function resultados(data) {
 		// insertamos las variables que realizan la consulta. ATENCIÓN A LOS ESPACIOS entre elementos
 		data: {
 			'db':'healthTopicsSpanish', 
-			'term':'title:' + $palabra.val() + , 
+			'term':'title:' + $(this).text() + , 
 			'rettype':'brief'
 		},
 		success: resultados,
@@ -41,6 +55,12 @@ function resultados(data) {
 			alert(xhr.responseText);
 		} 
    });
+});
+*/
+
+// función que muestra los resultados
+function resultados(data) { 
+	alert('conectado');
 }
 
 });
