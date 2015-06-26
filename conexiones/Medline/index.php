@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf8"/>
-		<title>Medline Plus</title>
-	</head>
-	<body>
-		<section id="solr">
-		<h2>Conectando con Medline Plus</h2>
+
+<?php include 'includes/encabezado.php';?>
+
+		<h3>Inserta un término de búsqueda</h3>
 		<form id="medline" name="medline" action="consulta.php" method="POST">
 			<label for="palabra">Palabra clave</label>
 			<input type="text" id="palabra" name="palabra" placeholder="enfermedad, cuidados..." autofocus/>
@@ -20,8 +15,4 @@
 		</div>
 		<div id="contenido">
 			
-		</div>
-		</section>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	</body>
-</html>
+<?php include 'includes/pie.php';?>

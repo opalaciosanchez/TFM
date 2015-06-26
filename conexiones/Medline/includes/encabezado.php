@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Buscador de farmacias</title>
+  <title>Términos y cuidados de salud Medline</title>
 </head>
 <body>
  	<section id="solr">
-		<h2>Buscador de farmacias</h2>
+		<h2>Términos y cuidados de salud Medline</h2>
