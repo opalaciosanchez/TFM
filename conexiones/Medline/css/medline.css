@@ -1,0 +1,16 @@
+body {
+	padding: 1em;
+}
+
+.oculto {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+.ampliar {
+	color: blue;
+	text-decoration: none;
+}

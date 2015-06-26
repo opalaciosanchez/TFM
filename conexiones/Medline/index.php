@@ -5,6 +5,7 @@
 		<form id="medline" name="medline" action="consulta.php" method="POST">
 			<label for="palabra">Palabra clave</label>
 			<input type="text" id="palabra" name="palabra" placeholder="enfermedad, cuidados..." autofocus/>
+			<!-- Exacta: <input type="checkbox" id="exacta" name="exacta"/> -->
 		<input type="submit" id="buscar" name="buscar" value="buscar"/>
 		</form>
 		<div id="categorias">

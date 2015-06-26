@@ -2,7 +2,17 @@
 require_once 'includes/functions.php';
 
 // capturamos las variables enviadas. Falta por asegurar la petición
-$palabra = $_POST['palabra'];
+$busqueda = $_POST['palabra'];
+
+// mejoramos los resultados asegurándonos de que hace las búsquedas más aproximadas posibles
+$palabra = str_replace(" ", "+AND+", $busqueda);
+
+// if (isset($_POST['exacta'])) {
+// 	$palabra = str_replace(" ", "+AND+", $busqueda);
+// } else {
+// 	$palabra = $busqueda;
+// }
+
 
 // Almacenamos la URL base para un mejor procesado
 $urlBase = 'http://wsearch.nlm.nih.gov/ws/query?db=healthTopicsSpanish';

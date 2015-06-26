@@ -17,12 +17,16 @@ function salidaDatos($resultado) {
 		// este bucle muestra sólo los datos interesantes
 		switch ($name) {
 			case 'title':
-				echo "<h3>" . $content->nodeValue . '</h3>';
+				echo "<a class='ampliar' href='#'><h3>" . $content->nodeValue . '</h3></a>';
 				;
 			case 'FullSummary':
-				echo "<p>" . $content->nodeValue . '</p>';
+				echo "<div class='oculto'>" . $content->nodeValue . '</div>';
 				;
 				break;
+				case 'groupName':
+					echo "<p><b>Categoría: " . $content->nodeValue . '</b></p>';
+					;
+					break;
 			default:
 				;
 				break;
