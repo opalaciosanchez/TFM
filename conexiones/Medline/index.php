@@ -1,5 +1,6 @@
 
 <?php include 'includes/encabezado.php';?>
+<?php include 'includes/functions.php';?>
 
 		<h3>Inserta un término de búsqueda</h3>
 		<form id="medline" name="medline" action="consulta.php" method="POST">
@@ -10,9 +11,12 @@
 		</form>
 		<div id="categorias">
 			<h3>Búsqueda por categoría de información</h3>
-			<p class="categoria"><a href=#>Esclerosis</a></p>
-			<p class="categoria"><a href=#>Cancer</a></p>
-			<p class="categoria"><a href=#>Asociaciones de enfermos</a></p>
+			<?php 
+				$urlBase = 'http://wsearch.nlm.nih.gov/ws/query?db=healthTopicsSpanish';
+				$palabras = "enfermedades";
+				$url = $urlBase . "&term=" . $palabras;
+				categorias($url);
+			?>
 		</div>
 		<div id="contenido">
 			

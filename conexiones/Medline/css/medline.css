@@ -13,4 +13,5 @@ body {
 .ampliar {
 	color: blue;
 	text-decoration: none;
+	cursor: pointer;
 }
