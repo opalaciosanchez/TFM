@@ -10,15 +10,12 @@
 			<!-- Exacta: <input type="checkbox" id="exacta" name="exacta"/> -->
 		<input type="submit" id="buscar" name="buscar" value="buscar"/>
 		</form>
-		<!-- <div id="categorias">
+		<div id="categorias">
 			<h3>Búsqueda por categoría de información</h3>
 			<?php 
-				$urlBase = 'http://wsearch.nlm.nih.gov/ws/query?db=healthTopicsSpanish';
-				$palabras = "enfermedades";
-				$url = $urlBase . "&term=" . $palabras;
+				$url = 'http://healthfinder.gov/developer/Search.xml?api_key=jddtxibhqszsjiqq&keyword=*&lang=es';
 				categorias($url);
 			?>
-		</div> -->
-		<div id="contenido">
+		</div>
 			
 <?php include 'includes/pie.php';?>
