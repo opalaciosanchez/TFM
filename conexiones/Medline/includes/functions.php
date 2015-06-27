@@ -62,19 +62,45 @@ function salidaDatos($resultado,$tagName) {
 		$groups = $content->getElementsByTagName('group');
 		$called = $content->getElementsByTagName('also-called');
 		$references = $content->getElementsByTagName('see-reference');
+		$sites = $content->getElementsByTagName('site');
 
 		// se muestra el título del tema
 		echo "<h3 class='ampliar'>" . $title . '</h3>';
 		// se crea la sección artículo que ocultara cada tópico
 		echo "<article class='oculto'>";
+		// insertamos los otros nombres del término buscado
+		if ($called->item(0)) {
+			echo "
+			<h4>También llamado</b></h4>
+			<ul>";
+			// recorremos todas las coincidencias obtenidas
+			foreach ($called as $called) {
+				echo "<li>" . $called->nodeValue . '</li>';
+			}
+
+			echo "</ul>";
+		}
+
 		// se muestra el texto central
 		echo "<p class='resumen'>" . $summary->item(0)->nodeValue . '</p>';
 
 		// mostramos las categorías relacionadas con los tópicos, creando primero esa sección
+
+		// sitios web de interés
+		echo "
+		<div class='sites'>
+		<h4 class='ampliar'>Para ampliar</b></h4>
+		<ul class='oculto'>";
+		foreach ($sites as $site) {
+			$titulo = $site->getAttribute('title');
+			$url = $site->getAttribute('url');
+			echo "<li><a href='" . $url . "' title='" . $url . "' target='_blank' >" . $titulo . '</a></li>';
+		}
+		echo "</ul></div>";
+
 		echo "<div class='categorias'>
 		<p><b>Categoría</b></p>
 		";
-
 		// para aquellos elementos de los que hay más de una coincidencia, es preciso recorrerlos con bucle
 		// por ejemplo aquí sucede con el elemento group y also-called
 		// primero han sido capturados como variable (arriba) y luego ésta usada para recorrerlos con foreach
@@ -88,15 +114,9 @@ function salidaDatos($resultado,$tagName) {
 			$id = "form" . $i;
 			echo "<p>" . enlacesForm($group,$id) . '</p>';
 		}
-		
-		// insertamos los otros nombres del término buscado
-		echo "
-		<p><b>También llamado</b></p><ul>";
-		foreach ($called as $called) {
-			echo "<li>" . $called->nodeValue . '</li>';
-		}
+
 		// cerramos la sección
-		echo "</ul></div></article>";
+		echo "</div></article>";
 	}
 }
 
