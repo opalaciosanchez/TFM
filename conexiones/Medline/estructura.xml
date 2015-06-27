@@ -1,0 +1,156 @@
+<health-topic title="Acoustic Neuroma" url="http://www.nlm.nih.gov/medlineplus/acousticneuroma.html" id="1624" language="English" date-created="04/22/2002">
+  <also-called>Acoustic neurilemmoma</also-called>
+  <also-called>Acoustic neurinoma</also-called>
+  <also-called>Auditory tumor</also-called>
+  <also-called>Vestibular schwannoma</also-called>
+  <full-summary><p>An acoustic neuroma is a <a href='http://www.nlm.nih.gov/medlineplus/benigntumors.html'>benign tumor</a> that develops on the nerve that connects the ear to the brain. The tumor usually grows slowly. As it grows, it presses against the hearing and balance nerves. At first, you may have no symptoms or mild symptoms. They can include</p> <ul> <li> Loss of hearing on one side </li> <li> Ringing in ears</li> <li> Dizziness and balance problems</li> </ul> <p>The tumor can also eventually cause numbness or paralysis of the face. If it grows large enough, it can press against the brain, becoming life-threatening.</p> <p>Acoustic neuroma can be difficult to diagnose, because the symptoms are similar to those of middle ear problems. Ear exams, hearing tests, and scans can show if you have it.</p> <p>If the tumor stays small, you may only need to have it checked regularly. If you do need treatment, surgery and radiation are options.</p> <p>If the tumors affect both hearing nerves, it is often because of a genetic disorder called <a href='http://www.nlm.nih.gov/medlineplus/neurofibromatosis.html'>neurofibromatosis</a>.</p> <p >NIH: National Institute on Deafness and Communication Disorders</p></full-summary>
+  <group url="http://www.nlm.nih.gov/medlineplus/brainandnerves.html" id="14">Brain and Nerves</group>
+  <group url="http://www.nlm.nih.gov/medlineplus/earnoseandthroat.html" id="16">Ear, Nose and Throat</group>
+  <language-mapped-topic url="http://www.nlm.nih.gov/medlineplus/spanish/acousticneuroma.html" id="2251" language="Spanish">Neuroma acústico</language-mapped-topic>
+- <mesh-heading>
+  <descriptor id="D009464">Neuroma, Acoustic</descriptor>
+  </mesh-heading>
+  <other-language vernacular-name="español" url="http://www.nlm.nih.gov/medlineplus/spanish/acousticneuroma.html">Spanish</other-language>
+  <primary-institute url="http://www.nidcd.nih.gov/">National Institute on Deafness and Other Communication Disorders</primary-institute>
+  <related-topic url="http://www.nlm.nih.gov/medlineplus/neurofibromatosis.html" id="1387">Neurofibromatosis</related-topic>
+  <see-reference>Auditory Tumor</see-reference>
+  <see-reference>Neuroma, Acoustic</see-reference>
+  <see-reference>Vestibular Schwannoma</see-reference>
+- <site title="Acoustic Neuroma" url="http://www.mayoclinic.org/diseases-conditions/acoustic-neuroma/basics/definition/CON-20023851?p=1">
+  <information-category>Start Here</information-category>
+  <organization>Mayo Foundation for Medical Education and Research</organization>
+  </site>
+- <site title="Acoustic neuroma" url="http://www.nlm.nih.gov/medlineplus/ency/article/000778.htm" language-mapped-url="http://www.nlm.nih.gov/medlineplus/spanish/ency/article/000778.htm">
+  <information-category>Patient Handouts</information-category>
+  <information-category>Encyclopedia</information-category>
+  </site>
+- <site title="Acoustic Neuroma" url="http://www.irsa.org/acoustic_neuroma.html">
+  <information-category>Treatments and Therapies</information-category>
+  <organization>International Radiosurgery Support Association</organization>
+  </site>
+- <site title="Acoustic Neuroma Educational Video" url="https://www.anausa.org/overview/educational-video">
+  <information-category>Videos</information-category>
+  <organization>Acoustic Neuroma Association</organization>
+  <standard-description>Video</standard-description>
+  </site>
+- <site title="Acoustic Neuroma Keywords" url="https://www.anausa.org/overview/acoustic-neuroma-keywords-2/Glossary-1/">
+  <information-category>Reference Desk</information-category>
+  <organization>Acoustic Neuroma Association</organization>
+  </site>
+- <site title="Acoustic Neuroma Procedure" url="http://www.orlive.com/prohealthcare/videos/prohealth-care-to-webcast-educational-brain-surgery-program?view=displayPageNLM">
+  <information-category>Videos</information-category>
+  <organization>OR-Live</organization>
+  <standard-description>Video</standard-description>
+  </site>
+- <site title="Acoustic Neuroma: Questions to Discuss with Your Doctor" url="http://www.health.harvard.edu/fhg/doctor/acousticNeuroma.shtml">
+  <information-category>Diagnosis/Symptoms</information-category>
+  <organization>Harvard Medical School</organization>
+  </site>
+- <site title="Centers of Excellence in Radiosurgery" url="http://www.irsa.org/CentersOfExcellence/CentersofExcellenceMenu.html">
+  <information-category>Find an Expert</information-category>
+  <organization>International Radiosurgery Support Association</organization>
+  </site>
+- <site title="ClinicalTrials.gov: Neuroma, Acoustic" url="http://clinicaltrials.gov/search/open/condition=%22Neuroma,+Acoustic%22">
+  <information-category>Clinical Trials</information-category>
+  <organization>National Institutes of Health</organization>
+  <standard-description>NIH</standard-description>
+  </site>
+- <site title="Closure of Dural Defects after Tumor Resection: Effective Use of Sealants and Collagen Duraplasty" url="http://orlive.com/covidien/duraseal1?view=displayPageNLM">
+  <information-category>Videos</information-category>
+  <organization>OR-Live</organization>
+  <standard-description>Video</standard-description>
+  </site>
+- <site title="Computed Tomography (CT) -- Head" url="http://www.radiologyinfo.org/en/info.cfm?pg=headct" language-mapped-url="http://www.radiologyinfo.org/sp/info.cfm?pg=headct">
+  <information-category>Diagnosis/Symptoms</information-category>
+  <organization>American College of Radiology</organization>
+  <organization>Radiological Society of North America</organization>
+  <standard-description>Video</standard-description>
+  </site>
+- <site title="Cranial CT scan" url="http://www.nlm.nih.gov/medlineplus/ency/article/003786.htm" language-mapped-url="http://www.nlm.nih.gov/medlineplus/spanish/ency/article/003786.htm">
+  <information-category>Patient Handouts</information-category>
+  <information-category>Encyclopedia</information-category>
+  </site>
+- <site title="Directory of Organizations (Deafness and Communication Disorders)" url="http://www.nidcd.nih.gov/directory/">
+  <information-category>Find an Expert</information-category>
+  <organization>National Institute on Deafness and Other Communication Disorders</organization>
+  <standard-description>NIH</standard-description>
+  </site>
+- <site title="Gamma-Knife Radiosurgery" url="http://www.mayoclinic.org/tests-procedures/gamma-knife-radiosurgery/basics/definition/PRC-20014760?p=1">
+  <information-category>Treatments and Therapies</information-category>
+  <organization>Mayo Foundation for Medical Education and Research</organization>
+  </site>
+- <site title="Head MRI" url="http://www.nlm.nih.gov/medlineplus/ency/article/003791.htm" language-mapped-url="http://www.nlm.nih.gov/medlineplus/spanish/ency/article/003791.htm">
+  <information-category>Patient Handouts</information-category>
+  <information-category>Encyclopedia</information-category>
+  </site>
+- <site title="Identifying the Acoustic Neuroma" url="https://www.anausa.org/index.php?option=com_content&view=article&id=116&Itemid=114">
+  <information-category>Diagnosis/Symptoms</information-category>
+  <organization>Acoustic Neuroma Association</organization>
+  </site>
+- <site title="Magnetic Resonance Imaging (MRI) -- Head" url="http://www.radiologyinfo.org/en/info.cfm?pg=headmr" language-mapped-url="http://www.radiologyinfo.org/sp/info.cfm?pg=headmr">
+  <information-category>Diagnosis/Symptoms</information-category>
+  <organization>American College of Radiology</organization>
+  <organization>Radiological Society of North America</organization>
+  <standard-description>Video</standard-description>
+  </site>
+- <site title="National Institute on Deafness and Other Communication Disorders" url="http://www.nidcd.nih.gov/">
+  <information-category>Find an Expert</information-category>
+  <organization>National Institute on Deafness and Other Communication Disorders</organization>
+  <standard-description>NIH</standard-description>
+  </site>
+- <site title="NIDCD Glossary" url="http://www.nidcd.nih.gov/health/glossary/Pages/glossary.aspx">
+  <information-category>Reference Desk</information-category>
+  <organization>National Institute on Deafness and Other Communication Disorders</organization>
+  <standard-description>NIH</standard-description>
+  </site>
+- <site title="Post Treatment of Acoustic Neuroma" url="https://www.anausa.org/index.php?option=com_content&view=article&id=119&Itemid=117">
+  <information-category>Treatments and Therapies</information-category>
+  <organization>Acoustic Neuroma Association</organization>
+  </site>
+- <site title="Acoustic Neuroma" url="http://www.ncbi.nlm.nih.gov/pubmed?term=neuroma,acoustic[majr]+AND+english[la]+AND+humans[mh]+NOT+(letter[pt]+OR+editorial[pt])+AND+%22last+1+Year%22[edat]">
+  <information-category>Journal Articles</information-category>
+  </site>
+- <site title="Selecting a Medical Professional" url="https://www.anausa.org/resources/medical-resources/selecting-a-medical-professional">
+  <information-category>Treatments and Therapies</information-category>
+  <organization>Acoustic Neuroma Association</organization>
+  </site>
+- <site title="Stereotactic Radiation Therapy for Brain Tumors" url="http://www.orlive.com/hartfordhospital/videos/trilogy-stereotactic-radiation-therapy-for-brain-tumors1?view=displayPageNLM">
+  <information-category>Videos</information-category>
+  <organization>OR-Live</organization>
+  <standard-description>Video</standard-description>
+  </site>
+- <site title="Stereotactic radiosurgery - discharge" url="http://www.nlm.nih.gov/medlineplus/ency/patientinstructions/000131.htm" language-mapped-url="http://www.nlm.nih.gov/medlineplus/spanish/ency/patientinstructions/000131.htm">
+  <information-category>Patient Handouts</information-category>
+  <information-category>Encyclopedia</information-category>
+  </site>
+- <site title="Stereotactic Radiosurgery - Gamma Knife" url="http://www.nlm.nih.gov/medlineplus/ency/article/007577.htm" language-mapped-url="http://www.nlm.nih.gov/medlineplus/spanish/ency/article/007577.htm">
+  <information-category>Patient Handouts</information-category>
+  <information-category>Encyclopedia</information-category>
+  </site>
+- <site title="Symptoms of Acoustic Neuroma" url="https://www.anausa.org/overview/symptoms">
+  <information-category>Diagnosis/Symptoms</information-category>
+  <organization>Acoustic Neuroma Association</organization>
+  </site>
+- <site title="Ten Ways to Recognize Hearing Loss" url="http://www.nidcd.nih.gov/health/hearing/pages/10ways.aspx" language-mapped-url="http://www.nidcd.nih.gov/health/spanish/pages/10w_sp.aspx">
+  <information-category>Health Check Tools</information-category>
+  <organization>National Institute on Deafness and Other Communication Disorders</organization>
+  <standard-description>NIH</standard-description>
+  </site>
+- <site title="Treatment Options Summary" url="https://www.anausa.org/pretreatment/treatment-options-summary">
+  <information-category>Treatments and Therapies</information-category>
+  <organization>Acoustic Neuroma Association</organization>
+  </site>
+- <site title="Types of Post-Treatment Issues" url="https://www.anausa.org/post-treatments/types-post-treatment-issues">
+  <information-category>Related Issues</information-category>
+  <organization>Acoustic Neuroma Association</organization>
+  </site>
+- <site title="Vestibular Schwannoma (Acoustic Neuroma) and Neurofibromatosis" url="http://www.nidcd.nih.gov/health/hearing/Pages/acoustic_neuroma.aspx">
+  <information-category>Start Here</information-category>
+  <organization>National Institute on Deafness and Other Communication Disorders</organization>
+  <standard-description>NIH</standard-description>
+  </site>
+- <site title="What Is an Acoustic Neuroma" url="https://www.anausa.org/index.php?option=com_content&view=article&id=114&Itemid=112">
+  <information-category>Start Here</information-category>
+  <organization>Acoustic Neuroma Association</organization>
+  </site>
+  </health-topic>
