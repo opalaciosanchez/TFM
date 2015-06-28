@@ -13,7 +13,7 @@
 		<div id="categorias">
 			<h3>Búsqueda por categoría de información</h3>
 			<?php 
-				$url = 'http://healthfinder.gov/developer/Search.xml?api_key=jddtxibhqszsjiqq&keyword=*&lang=es';
+				$url = 'http://healthfinder.gov/developer/Search.xml?api_key=jddtxibhqszsjiqq&CategoryID=*&lang=es';
 				categorias($url);
 			?>
 		</div>
