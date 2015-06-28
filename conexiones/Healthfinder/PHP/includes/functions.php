@@ -64,11 +64,11 @@ function salidaDatos($xml) {
 		$numItems = count($baseRelatedCount);
 		// echo $numItems;
 		if ($numItems > 0) {
-			echo "<p><b>PARA SABER MAS</b></p>
+			echo "<p><b>TEMAS RELACIONADOS</b></p>
 				 <ul class='related'>";
 			for ($r=0; $r < $numItems; $r++) { 
-				echo "<li>" . $baseRelatedCount[$r]->Title . "</li>" . 
-				$baseRelatedCount[$r]->Content;
+				$title = $baseRelatedCount[$r]->Title;
+				enlacesForm($title,$r);
 			}
 			echo '</ul>';
 		}
@@ -93,36 +93,36 @@ function salidaDatos($xml) {
 
 }
 
-/* FUNCION PARA OBTENER TODAS LAS CATEGORIAS */
-function categorias($url) {
-	// obtenemos TODOS los resultados de medline
-	$datos = obtenerContenidos($url);
-	salidaCategorias($datos);
-}
-
-function salidaCategorias($xml) {
-	
-	// print_r($xml);
-	$baseTopic = $xml->Topics->Topic;
-	$tamaño = count($baseTopic);
-
-	// echo $tamaño . "<br>";
-	echo "<ul class='categorias'>";
-	for ($i=0; $i < $tamaño; $i++) { 
-		echo "<li>" . $baseTopic[$i]->categories . "</li>";
-	}
-	echo "</ul>";
-}
-// función que permite que las categorías del listado de resultados funcionen como enlaces
+// función que permite que los temas relacionados del listado de resultados funcionen como enlaces
 function enlacesForm($elemento,$id) {
 	// insertamos en el elemento en el que se ha llamado la función el código del formulario
 	// pasamos como valor del campo oculto, el valor del campo 
-	$categoria = $elemento->nodeValue;
 	echo "<form name='" . $id . "' id='" . $id . "' method='POST' action='consulta.php'>
-	<input type='hidden' name='oculto' value='" . $categoria . "'>
-	<a href='#' onclick='document.forms[\"" . $id . "\"].submit();'>" . $categoria . "</a>
+	<input type='hidden' name='oculto' value='" . $elemento . "'>
+	<a href='#' onclick='document.forms[\"" . $id . "\"].submit();'>" . $elemento . "</a>
 	</form>";
 	
 }
+
+// /* FUNCION PARA OBTENER TODAS LAS CATEGORIAS */
+// function categorias($url) {
+// 	// obtenemos TODOS los resultados de medline
+// 	$datos = obtenerContenidos($url);
+// 	salidaCategorias($datos);
+// }
+
+// function salidaCategorias($xml) {
+	
+// 	// print_r($xml);
+// 	$baseTopic = $xml->Topics->Topic;
+// 	$tamaño = count($baseTopic);
+
+// 	// echo $tamaño . "<br>";
+// 	echo "<ul class='categorias'>";
+// 	for ($i=0; $i < $tamaño; $i++) { 
+// 		echo "<li>" . $baseTopic[$i]->categories . "</li>";
+// 	}
+// 	echo "</ul>";
+// }
 
 ?>
