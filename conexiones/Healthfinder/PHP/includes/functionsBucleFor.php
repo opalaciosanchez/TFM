@@ -33,26 +33,34 @@ function salidaDatos($xml) {
 
 	// dada la complejidad de la estructura (no podemos trabajar con DOM), reducimos la longitud de cada elemento
 	// para ello una vez identificados, los insertamos en variables
+	// MUCHA ATENCIÓN A LAS RUTAS CON [$i] QUE SUSTITUIMOS
 	// primero insertamos la ruta base que servirá para llegar a cada tópico.
+	// Cada tópico ES UNA MATRIZ de la que hay que averiguar su tamaño. 
 	$baseTopic = $xml->Topics->Topic;
-	foreach ($baseTopic as $topic) {
-		echo "<h3 class='ampliar'>" . $topic->Title . "</h3>";
+	// el recuento sirve para identificar la longitud de CADA TOPICO
+	$numTopics = count($baseTopic);
+
+	// una vez que sabemos su longitud LA RECORREMOS COMPLETA GRACIAS AL DATO DE LA LONGITUD
+	for ($i=0; $i < $numTopics; $i++) { 
+		// cada tópico dispone de un título que mostramos destacado, y que permite ocultar su artículo
+		echo "<h3 class='ampliar'>" . $baseTopic[$i]->Title . "</h3>";
 		echo "<article class='oculto'>";
 		// a su vez, cada tópico TIENE UN ELEMENTO <sections> que contiene <section> QUE SON OTRA MATRIZ
 		// esto es porque cada sección tiene su propio título y contenido
 		// contamos el número de secciones (section) de cada tópico
 		// para hacerlo más sencillo, lo convertimos en una variable
-		$baseTopicCount = $topic->Sections->Section;
-
+		$baseTopicCount = $baseTopic[$i]->Sections->Section;
+		$numSections = count($baseTopicCount);
+		// echo "El número de secciones del tópico es: " . $numSections;
 		// para cada tópico recorremos a su vez el número de secciones
-		foreach ($baseTopicCount as $section) {
-			echo "<h4>" . $section->Title . "</h4>" . 
-				 $section->Content;
+		for ($s=0; $s < $numSections; $s++) { 
+			echo "<h4>" . $baseTopicCount[$s]->Title . "</h4>" . 
+				 $baseTopicCount[$s]->Content;
 		}
 
 		// al igual que el tópico tiene matriz de secciones, también la tiene la de términos relacionados
 		// por ello se inserta EN EL INTERIOR DEL BUCLE QUE RECORRE CADA TOPICO
-		$baseRelatedCount = $topic->RelatedItems->Item;
+		$baseRelatedCount = $baseTopic[$i]->RelatedItems->Item;
 		$numItems = count($baseRelatedCount);
 		// echo $numItems;
 		if ($numItems > 0) {
