@@ -19,13 +19,26 @@ footer.container-fluid {
 	padding: 5em 5em 4em;
 }
 
-.pie {
-	text-align: center;
-}
-
 .pie h3 {
 	font-family: Aleo-Light, serif;
-	font-size: 0.8em;
+	font-size: 1em;
 	color: #999;
 	text-transform: uppercase;
+}
+
+.pie li {
+	list-style: none;
+	line-height: 1.6em;
+}
+
+.pie li a {
+	font-size: 0.8em;
+	color: #fff;
+	font-family: Lato-Light, sans-serif;
+}
+
+.pie li a:hover {
+	font-size: 0.8em;
+	color: #999;
+	font-family: Lato-Light, sans-serif;
 }
