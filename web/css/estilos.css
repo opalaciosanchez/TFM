@@ -1,0 +1,31 @@
+@import url(bootstrap.css);
+@import url(fonts.css);
+
+/* clases personales para la navegación */
+.navbar-header {
+	font-family: "Lato-Light", sans-serif;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.navbar-nav {
+	text-transform: uppercase;
+	font-family: "Lato-Regular", sans-serif;
+}
+
+/* clases personales para el pie de página */
+footer.container-fluid {
+	background-color: #1C191B;
+	padding: 5em 5em 4em;
+}
+
+.pie {
+	text-align: center;
+}
+
+.pie h3 {
+	font-family: Aleo-Light, serif;
+	font-size: 0.8em;
+	color: #999;
+	text-transform: uppercase;
+}

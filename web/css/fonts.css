@@ -1,0 +1,37 @@
+/* listado de fuentes usadas */
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('fonts/Lato-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('fonts/Aleo-Regular.otf') format('opentype');
+    src: url('fonts/aleo-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo-Italic';
+    src: url('fonts/aleo-italic.otf') format('opentype');
+    src: url('fonts/aleo-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo-Light';
+    src: url('fonts/aleo-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

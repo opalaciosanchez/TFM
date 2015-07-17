@@ -11,6 +11,7 @@ html {
 }
 body {
   margin: 0;
+  padding-top: 90px;
 }
 article,
 aside,
@@ -4278,6 +4279,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
+  padding: 1em 1em 0.8em 1em;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -4541,7 +4543,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #fff;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
