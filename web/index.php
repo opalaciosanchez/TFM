@@ -30,6 +30,23 @@
 				<!-- aquí se carga el contenido Ajax -->
 			</div>
 		</div>
+		<article id="servicios" class="main row">
+		<div class="container">
+			<h3 class="serviciosh3">Otros servicios en la provincia de Zaragoza</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies diam et nisl elementum, quis varius leo dictum. Etiam et nisl dapibus, cursus leo eu, consectetur mauris. Maecenas sit amet neque non justo viverra facilisis. Morbi a tellus sapien.
+				Cras id mi viverra, aliquet justo eu, placerat tortor. Phasellus cursus mi arcu. Donec nec tempor massa, sed viverra lectus. Mauris viverra vel elit non molestie. 
+			</p>
+			<div class="col-xs-12 col-sm-6 servicios">
+				<h4>Farmacias</h4>
+				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			</div>
+			<div class="col-xs-12 col-sm-6 servicios">
+				<h4>Centros de salud</h4>
+				<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+			</div>
+		</div>
+		</article>
 	</section>
 </div>
 

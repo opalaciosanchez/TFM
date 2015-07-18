@@ -26,6 +26,17 @@
 	background-image: url("../img/tablet.jpg");
 }
 
+#asociaciones label {
+	margin-top: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	font-family: Aleo-Light, serif;
+	border-bottom: 1px solid;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+	        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+}
+
 .buscar {
 	font-family: Aleo, serif;
 	text-transform: uppercase;
@@ -62,17 +73,6 @@ button.btn {
 	margin-top: 2em;
 }
 
-#asociaciones label {
-	margin-top: 2em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 0.9em;
-	font-family: Aleo-Light, serif;
-	border-bottom: 1px solid;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
-	        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
-}
-
 .help-block {
 	font-family: Lato-Light, sans-serif;
 	color: #fff;
@@ -84,7 +84,7 @@ button.btn {
 #contenido {
 	display: none;
 	padding: 2em 0;
-	background: url("../img/crossword.png") repeat;
+	background: url(../img/crossword.png) repeat;
 }
 
 #contenido h4 {
@@ -98,6 +98,42 @@ button.btn {
 #contenido strong {
 	font-family: "Lato-Regular", sans-serif;
 	font-weight: normal;
+}
+
+/* Otros servicios */
+#servicios {
+	padding: 2em 0;
+	background-image: url(../img/tiny_grid.png);
+}
+
+.serviciosh3, .servicios h4 {
+	font-family: "Aleo", serif;
+	text-transform: uppercase;
+	color: #000;
+}
+
+#servicios p {
+	font-family: "Lato-Light", sans-serif;
+	font-size: 1.2em;
+	color: #000;
+	text-align: justify;
+}
+
+.servicios {
+	text-align: center;
+}
+
+.serviciosh3 {
+	font-size: 1.5em;
+}
+
+.servicios h4 {
+	font-size: 1.2em;
+}
+
+.glyphicon {
+	font-size: 4em;
+	margin-top: 0.2em;
 }
 
 /* FOOTER */
