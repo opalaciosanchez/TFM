@@ -5,8 +5,8 @@
 	<meta charset="UTF-8"/>
 	<!-- Importamos el viewport para trabajar con dispositivos móviles y el fichero mínimo de estilos Boostrap -->
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1"/>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
 	<title>Recursos de información sanitaria</title>
 </head>
 <body>
@@ -112,6 +112,6 @@
 	</footer>
 	<!-- Incluimos jQuery y bootstrap.js, que precisa del anterior -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
