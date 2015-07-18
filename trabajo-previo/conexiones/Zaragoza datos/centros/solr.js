@@ -22,7 +22,7 @@ $buscar.on('click', function () {
 		ifModified: true,
 		url: $URL,
 		// insertamos las variables que realizan la consulta. ATENCIÓN A LOS ESPACIOS entre elementos
-		data: { 'wt':'json','q':'title:Salud AND (text:' + $palabra.val() + 'OR texto_t:' + $palabra.val() + ') AND category:Recursos' },
+		data: { 'wt':'json','q':'title:Salud AND (text:' + $palabra.val() + ') AND category:Recursos' },
 		success: resultados,
 		dataType: 'jsonp',
 		jsonp: 'json.wrf',

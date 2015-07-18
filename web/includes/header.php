@@ -31,8 +31,8 @@
 				<div class="collapse navbar-collapse" id="navbar-1">
 				<!-- estas clases crean un menú como tal, y además sitúa los elementos a la derecha de la barra de forma responsive -->
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#asociaciones">Asociaciones</a></li>
-						<li><a href="#servicios">Servicios</a></li>
+						<li><a href="index.php#asociaciones">Asociaciones</a></li>
+						<li><a href="index.php#servicios">Servicios</a></li>
 						<li><a href="#">Enfermedades</a></li>
 						<li><a href="#">Salud</a></li>
 					</ul>

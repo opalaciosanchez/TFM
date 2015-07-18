@@ -5,9 +5,9 @@ function salidaDatos($resultado) {
 	$longitud = count($resultado['features']);
 	// creamos el encabezado de la tabla
 	echo '
-	<div id="contenido">
+	<div id="farmacias" class="container">
 		<h3>Listado de farmacias</h3>
-		<table id="farmacias">
+		<table class="table table-striped">
 		<tr>
 			<th>Nombre</th>
 			<th>Dirección</th>
@@ -26,7 +26,7 @@ function salidaDatos($resultado) {
 
 		echo '<tr><td>' . $base['title'] . '</td><td>' . $separacion[0] . '</td><td>' . $otros[0] . '</td><td>
 			<a href="http://maps.google.com/?q=' . $baseLocalizacion[0] . ',' . $baseLocalizacion[1] .'" target="_blank">
-			<button name="envioCoord" id="envioCoord">Ubicación en mapa</button></a>
+			<button class="farmacia btn btn-default" name="envioCoord" id="envioCoord">Ubicación en mapa</button></a>
 		';
 
 	}

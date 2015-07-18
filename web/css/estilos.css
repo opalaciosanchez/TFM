@@ -54,7 +54,7 @@ h3.buscar {
 
 
 .categoria a {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	color: #fff;
 	font-family: "Lato-Light", sans-serif;
 }
@@ -68,7 +68,7 @@ input, button {
 	font-family: "Lato-Regular", sans-serif;
 }
 
-button.btn {
+#asociaciones button.btn, #servicios input.btn, #servicios button.btn {
 	width: 100%;
 	margin-top: 2em;
 }
@@ -83,15 +83,21 @@ button.btn {
 /* Resultados Ajax */
 #contenido {
 	display: none;
-	padding: 2em 0;
-	background: url(../img/crossword.png) repeat;
+	padding: 2em 2em;
+	text-align: center;
 }
 
-#contenido h4 {
+#contenidoCentro {
+	display: none;
+	padding: 2em 2em;
+}
+
+#contenido h4, #contenidoCentro h4 {
 	font-family: "Aleo-Light", serif;
+	text-transform: uppercase;
 }
 
-#contenido p {
+#contenido p, #contenidoCentro p {
 	font-family: "Lato-light", sans-serif;
 }
 
@@ -100,9 +106,9 @@ button.btn {
 	font-weight: normal;
 }
 
-/* Otros servicios */
+/* Otros servicios: Farmacias */
 #servicios {
-	padding: 2em 0;
+	padding: 3em 0 5em 0;
 	background-image: url(../img/tiny_grid.png);
 }
 
@@ -133,7 +139,34 @@ button.btn {
 
 .glyphicon {
 	font-size: 4em;
-	margin-top: 0.2em;
+	margin: 0.2em 0 0.5em 0;
+}
+
+#farmacias {
+	padding: 2em 0;
+}
+
+input.farmacia {
+	margin: 0;
+}
+
+/* Otros servicios: Centros de salud */
+#contenidoCentro {
+	display: none;
+	padding: 2em 0;
+}
+
+#contenidoCentro {
+	display: none;
+	padding: 2em 4em;
+	text-align: center;
+}
+
+/* MEDLINE */
+
+.fondomedline {
+	padding: 10em 0;
+	background: #373135;
 }
 
 /* FOOTER */
