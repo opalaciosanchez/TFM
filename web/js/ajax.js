@@ -11,7 +11,7 @@ var $palabra = $('#palabra');
 // enlaces de categorias
 var $categoria = $('.categoria');
 // sección donde insertar el contenido
-var $contenido = $('#contenido');
+var $contenido = $('#contenidoAsoc');
 // URL base de la consulta
 var $URL = 'http://www.zaragoza.es/buscador/select?';
 
@@ -152,5 +152,16 @@ function resultadosCentro(data) {
   }
   $palabraCentro.val("");
 }
+
+// COMPORTAMIENTO PARA OCULTAR LAS SECCIONES DE MEDLINE Y HEALTHFINDER
+// creamos las variables que vayamos a ir necesitando
+// comenzamos capturando el botón que lanza la búsqueda
+var $contenidoMostrar = $('.ampliar');
+// código para mostrar zonas ocultas
+$contenidoMostrar.on('click', function () {
+  // se toma como referencia el elemento sobre el que se hace clic
+  // con él, se identifican el resto de elementos siguientes HASTA QUE ENCUENTRA el siguiente enlace de título
+  $(this).nextUntil('.ampliar').toggleClass('oculto');
+});
 
 });

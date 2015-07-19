@@ -23,10 +23,10 @@
 
 .fondozgz {
 	padding: 10em 0;
-	background-image: url("../img/tablet.jpg");
+	background-image: url(../img/tablet.jpg);
 }
 
-#asociaciones label {
+#asociaciones label, #medline label, #healthfinder label{
 	margin-top: 2em;
 	color: #fff;
 	text-transform: uppercase;
@@ -68,7 +68,9 @@ input, button {
 	font-family: "Lato-Regular", sans-serif;
 }
 
-#asociaciones button.btn, #servicios input.btn, #servicios button.btn {
+#asociaciones button.btn, #servicios input.btn, #servicios button.btn, 
+#medline input.btn, #healthfinder input.btn
+{
 	width: 100%;
 	margin-top: 2em;
 }
@@ -81,7 +83,7 @@ input, button {
 }
 
 /* Resultados Ajax */
-#contenido {
+#contenidoAsoc {
 	display: none;
 	padding: 2em 2em;
 	text-align: center;
@@ -92,22 +94,22 @@ input, button {
 	padding: 2em 2em;
 }
 
-#contenido h4, #contenidoCentro h4 {
+#contenidoAsoc h4, #contenidoCentro h4 {
 	font-family: "Aleo-Light", serif;
 	text-transform: uppercase;
 }
 
-#contenido p, #contenidoCentro p {
+#contenidoAsoc p, #contenidoCentro p {
 	font-family: "Lato-light", sans-serif;
 }
 
-#contenido strong {
+#contenidoAsoc strong {
 	font-family: "Lato-Regular", sans-serif;
 	font-weight: normal;
 }
 
-/* Otros servicios: Farmacias */
-#servicios {
+/* Separador servicios e información */
+#servicios, #separador {
 	padding: 3em 0 5em 0;
 	background-image: url(../img/tiny_grid.png);
 }
@@ -118,7 +120,7 @@ input, button {
 	color: #000;
 }
 
-#servicios p {
+#servicios p, #separador p {
 	font-family: "Lato-Light", sans-serif;
 	font-size: 1.2em;
 	color: #000;
@@ -137,6 +139,7 @@ input, button {
 	font-size: 1.2em;
 }
 
+/* Otros servicios: Farmacias */
 .glyphicon {
 	font-size: 4em;
 	margin: 0.2em 0 0.5em 0;
@@ -148,6 +151,18 @@ input, button {
 
 input.farmacia {
 	margin: 0;
+}
+
+#farmacias h3 {
+	font-family: "Aleo-Light", serif;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+#farmacias table {
+	font-family: "Lato-light", sans-serif;
 }
 
 /* Otros servicios: Centros de salud */
@@ -162,11 +177,105 @@ input.farmacia {
 	text-align: center;
 }
 
-/* MEDLINE */
+/* Medline */
 
 .fondomedline {
 	padding: 10em 0;
-	background: #373135;
+	background-image: url(../img/grey_wash_wall.png);
+}
+
+#medline p {
+	font-size: 1.2em;
+	color: #fff;
+	font-family: "Lato-Light", sans-serif;
+	text-align: justify;
+}
+
+.resultados {
+	padding: 2em 0 2em 0;
+	background-image: url(../img/grey_wash_wall.png);
+	text-align: center;
+	font-family: Aleo, serif;
+	color: #fff;
+}
+
+div.resultados strong {
+	color: #fff;
+	font-family: "Lato-Light";
+	text-align: center;
+}
+
+.oculto {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+h3.ampliar, h4.ampliar {
+	font-family: "Aleo-Light", serif;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	text-align: center;
+}
+
+h3.ampliar {
+	font-size: 1.3em;
+	padding: 0 2em;
+}
+
+h4.ampliar {
+	font-size: 1.1em;
+}
+
+#resultadosMedline article {
+	padding: 0 2em;
+}
+
+#resultadosMedline .categorias {
+	text-align: center;
+	font-family: "Lato-Regular", sans-serif;
+}
+
+#resultadosMedline .llamado {
+	font-family: "Lato-Regular", sans-serif;
+	font-size: 1.2em;
+}
+
+#resultadosMedline li {
+	font-family: "Lato-Light-Italic";
+	list-style: none;
+}
+
+#resultadosMedline {
+	padding: 3em 0 5em 0;
+	background-image: url(../img/tiny_grid.png);
+}
+
+#resultadosMedline p {
+	font-size: 1em;
+	color: #000;
+	font-family: "Lato-Light", sans-serif;
+	text-align: justify;
+}
+
+#resultadosMedline h4 {
+	font-family: "Aleo-Light", serif;
+	color: #000;
+	font-size: 1.2em;
+}
+
+/* Healthfinder */
+
+.fondohealthfinder {
+	padding: 10em 0;
+	background-image: url(../img/comida.jpg);
+}
+
+#healthfinder p {
+	color: #fff;
 }
 
 /* FOOTER */

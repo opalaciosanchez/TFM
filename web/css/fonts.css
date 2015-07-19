@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'Lato-Light-Italic';
+    src: url('fonts/Lato-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Aleo';
     src: url('fonts/Aleo-Regular.otf') format('opentype');
     src: url('fonts/aleo-regular-webfont.ttf') format('truetype');

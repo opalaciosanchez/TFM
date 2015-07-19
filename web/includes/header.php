@@ -25,7 +25,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!-- creamos el texto de encabezado que queremos que aparezca con una clase para que se integre en el menú-->
-					<a href="#" class="navbar-brand">OpenData Salud</a>
+					<a href="index.php" class="navbar-brand">OpenData Salud</a>
 				</div>
 				<!-- creamos el menú al que apunta el data-target anterior -->
 				<div class="collapse navbar-collapse" id="navbar-1">
@@ -33,8 +33,8 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="index.php#asociaciones">Asociaciones</a></li>
 						<li><a href="index.php#servicios">Servicios</a></li>
-						<li><a href="#">Enfermedades</a></li>
-						<li><a href="#">Salud</a></li>
+						<li><a href="index.php#medline">Enfermedades</a></li>
+						<li><a href="index.php#healthfinder">Salud</a></li>
 					</ul>
 				</div>
 			</div>
