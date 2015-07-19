@@ -63,13 +63,18 @@ function resultados(data) {
       $contenido.toggle();
       $("#buscarAsoc").append('<strong class="aviso">Los resultados aparecen en la parte inferior</strong>');
       $("#buscarAsoc").append('<strong class="cerrar" tabindex="0">Cerrar resultados</strong>');
-      $(".cerrar").on("click keypress", function(e) {
+      $(".cerrar").on("click tab", function() {
+          $(".aviso").remove();
+          $(".cerrar").remove();
+          $contenido.toggle();
+      });
+      $(".cerrar").on("keypress", function(e) {
         if(e.which == 13) {
           $(".aviso").remove();
           $(".cerrar").remove();
           $contenido.toggle();
         }
-      })
+      });
     };
    
     $.each(data.response, function() {
@@ -145,13 +150,18 @@ function resultadosCentro(data) {
      $contenidoCentro.toggle();
      $("#buscarCentro").append('<strong class="aviso">Los resultados aparecen en la parte inferior</strong>');
      $("#buscarCentro").append('<strong class="cerrar" tabindex="0">Cerrar resultados</strong>');
-     $(".cerrar").on("click keypress", function(e) {
-      if(e.which == 13) {
+     $(".cerrar").on("click tab", function(e) {
          $(".aviso").remove();
          $(".cerrar").remove();
          $contenidoCentro.toggle();
-      }
-     })
+     });
+     $(".cerrar").on("keypress", function(e) {
+       if(e.which == 13) {
+         $(".aviso").remove();
+         $(".cerrar").remove();
+         $contenidoCentro.toggle();
+       }
+     });
    };
 
     // creamos la URL base para permitir la ubicación del centro de salud en el mapa
@@ -190,10 +200,14 @@ function resultadosCentro(data) {
 // comenzamos capturando el botón que lanza la búsqueda
 var $contenidoMostrar = $('.ampliar');
 // código para mostrar zonas ocultas
-$contenidoMostrar.on('click keypress', function (e) {
-  if(e.which == 13) {
-  // se toma como referencia el elemento sobre el que se hace clic y si la tecla pulsada es enter
+$contenidoMostrar.on('click tab', function () {
+  // se toma como referencia el elemento sobre el que se hace clic
   // con él, se identifican el resto de elementos siguientes HASTA QUE ENCUENTRA el siguiente enlace de título
+    $(this).nextUntil('.ampliar').toggleClass('oculto');
+});
+// si la tecla pulsada es enter se actúa igual
+$contenidoMostrar.on("keypress", function(e) {
+  if(e.which == 13) {
     $(this).nextUntil('.ampliar').toggleClass('oculto');
   }
 });
