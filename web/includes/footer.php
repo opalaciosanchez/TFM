@@ -4,9 +4,10 @@
 			<div class="pie col-xs-12 col-md-6 col-lg-3">
 				<ul>
 					<li><h3>PLATAFORMA</h3></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Enfermedades</a></li>
-					<li><a href="#">Consejos de salud</a></li>
+					<li><a href="index.php#asociaciones">Asociaciones</a></li>
+					<li><a href="index.php#servicios">Servicios</a></li>
+					<li><a href="index.php#medline">Enfermedades</a></li>
+					<li><a href="index.php#healthfinder">Salud</a></li>
 				</ul>
 			</div>
 			<div class="pie col-xs-12 col-md-6 col-lg-3">

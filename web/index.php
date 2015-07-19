@@ -109,7 +109,7 @@
 				<h4>Información contrastada</h4>
 				<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
 				<p>
-					Hazlo siempre con la confianza de saber que la información procede de fuentes oficiales y profesionales sanitarios. Ninguna de las informaciones aquí ofrecidas se ha buscado al azar. Todas han seguido un proceso de selección y análisis exhaustivo, respetando la libertad de información: información libre y de calidad.
+					Hazlo siempre con la confianza de saber que la información procede de fuentes oficiales y profesionales sanitarios. Todas las fuentes de información han sido analizadas cuidadosamente.
 				</p>
 			</div>
 		</div>
@@ -134,7 +134,7 @@
 							El sistema realizará una búsqueda en la base de datos de cuidados de Healthfinder en castellano
 						</p>
 						<form id="healthfinderForm" name="healthfinderForm" action="consulta.php" method="POST">
-							<input class="form-control" type="text" id="palabraConsejo" name="palabraConsejo" placeholder="duda sobre salud, consejo ..." autofocus/>
+							<input class="form-control" type="text" id="palabraConsejo" name="palabraConsejo" placeholder="duda sobre salud, enfermedad ..." autofocus/>
 							<input type="hidden" name="buscarConsejo" id="buscarConsejo" value="buscarConsejo" />
 							<input class="btn btn-default" type="submit" id="consejo" name="consejo" value="Buscar"/>
 						</form>
