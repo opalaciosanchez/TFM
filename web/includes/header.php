@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1"/>
 	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-accessibility.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/start/jquery-ui.css">
 	<title>Recursos de información sanitaria</title>
 </head>
@@ -26,7 +28,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!-- creamos el texto de encabezado que queremos que aparezca con una clase para que se integre en el menú-->
-					<a href="index.php" class="navbar-brand">OpenData Salud</a>
+					<h1><a href="index.php" class="navbar-brand">OpenData Salud</a></h1>
 				</div>
 				<!-- creamos el menú al que apunta el data-target anterior -->
 				<div class="collapse navbar-collapse" id="navbar-1">

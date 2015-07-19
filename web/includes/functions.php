@@ -128,9 +128,9 @@ function salidaDatos($resultado,$tagName) {
 		$sites = $content->getElementsByTagName('site');
 
 		// se muestra el título del tema
-		echo "<h3 class='ampliar'>" . $title . '</h3>';
+		echo "<h3 class='ampliar' aria-controls='" . $title . "'><span role=button tabindex='0'>" . $title . '<span></h3>';
 		// se crea la sección artículo que ocultara cada tópico
-		echo "<article class='oculto'>";
+		echo "<article class='oculto' id='" . $title . "' aria-live='polite'>";
 		// insertamos los otros nombres del término buscado
 		if ($called->item(0)) {
 			echo "
@@ -152,7 +152,7 @@ function salidaDatos($resultado,$tagName) {
 		// sitios web de interés
 		echo "
 		<div class='sites'>
-		<h4 class='ampliar'>Para ampliar</b></h4>
+		<h4 class='ampliar'><span role=button tabindex='0'>Para ampliar (<b>pulse para desplegar opciones</b>)</span></h4>
 		<ul class='oculto'>";
 		foreach ($sites as $site) {
 			$titulo = $site->getAttribute('title');
@@ -259,8 +259,8 @@ function salidaConsejos($xml) {
 	echo "<div class='container'>";
 	echo "<h2 class='herramientas'>Resultados principales</h2>";
 	foreach ($baseTopic as $topic) {
-		echo "<h3 class='ampliar'>" . $topic->Title . "</h3>";
-		echo "<article class='oculto'>";
+		echo "<h3 class='ampliar' aria-controls='" . $topic->Title . "'><span role=button tabindex='0'>" . $topic->Title . "</span></h3>";
+		echo "<article class='oculto' id='" . $topic->Title . "' aria-live='polite'>";
 		// a su vez, cada tópico TIENE UN ELEMENTO <sections> que contiene <section> QUE SON OTRA MATRIZ
 		// esto es porque cada sección tiene su propio título y contenido
 		// contamos el número de secciones (section) de cada tópico
@@ -301,8 +301,8 @@ function salidaConsejos($xml) {
 	echo "<h3 class='herramientas'>Recursos relacionados</h3>";
 	// recorremos el total de Tools ofrecidas
 	for ($i=0; $i < $numTools; $i++) { 
-		echo "<h4 class='ampliar'>" . $baseTool[$i]->Title . "</h4>";
-		echo "<article class='oculto'>";
+		echo "<h4 class='ampliar' aria-controls='" . $baseTool[$i]->Title . "'><span role=button tabindex='0'>" . $baseTool[$i]->Title . "</span></h4>";
+		echo "<article class='oculto' id='" . $baseTool[$i]->Title . "' aria-live='polite'>";
 		echo $baseTool[$i]->Content;
 		echo "</article>";
 	}

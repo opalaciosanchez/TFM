@@ -62,11 +62,13 @@ function resultados(data) {
     if ($contenido.css("display", "none")) {
       $contenido.toggle();
       $("#buscarAsoc").append('<strong class="aviso">Los resultados aparecen en la parte inferior</strong>');
-      $("#buscarAsoc").append('<strong class="cerrar">Cerrar resultados</strong>');
-      $(".cerrar").on("click", function() {
-        $(".aviso").remove();
-        $(".cerrar").remove();
-        $contenido.toggle();
+      $("#buscarAsoc").append('<strong class="cerrar" tabindex="0">Cerrar resultados</strong>');
+      $(".cerrar").on("click keypress", function(e) {
+        if(e.which == 13) {
+          $(".aviso").remove();
+          $(".cerrar").remove();
+          $contenido.toggle();
+        }
       })
     };
    
@@ -142,11 +144,13 @@ function resultadosCentro(data) {
    if ($contenidoCentro.css("display", "none")) {
      $contenidoCentro.toggle();
      $("#buscarCentro").append('<strong class="aviso">Los resultados aparecen en la parte inferior</strong>');
-     $("#buscarCentro").append('<strong class="cerrar">Cerrar resultados</strong>');
-     $(".cerrar").on("click", function() {
-       $(".aviso").remove();
-       $(".cerrar").remove();
-       $contenidoCentro.toggle();
+     $("#buscarCentro").append('<strong class="cerrar" tabindex="0">Cerrar resultados</strong>');
+     $(".cerrar").on("click keypress", function(e) {
+      if(e.which == 13) {
+         $(".aviso").remove();
+         $(".cerrar").remove();
+         $contenidoCentro.toggle();
+      }
      })
    };
 
@@ -186,10 +190,12 @@ function resultadosCentro(data) {
 // comenzamos capturando el botón que lanza la búsqueda
 var $contenidoMostrar = $('.ampliar');
 // código para mostrar zonas ocultas
-$contenidoMostrar.on('click', function () {
-  // se toma como referencia el elemento sobre el que se hace clic
+$contenidoMostrar.on('click keypress', function (e) {
+  if(e.which == 13) {
+  // se toma como referencia el elemento sobre el que se hace clic y si la tecla pulsada es enter
   // con él, se identifican el resto de elementos siguientes HASTA QUE ENCUENTRA el siguiente enlace de título
-  $(this).nextUntil('.ampliar').toggleClass('oculto');
+    $(this).nextUntil('.ampliar').toggleClass('oculto');
+  }
 });
 
 });
