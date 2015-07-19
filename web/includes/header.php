@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1"/>
 	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/start/jquery-ui.css">
 	<title>Recursos de información sanitaria</title>
 </head>
 <body>

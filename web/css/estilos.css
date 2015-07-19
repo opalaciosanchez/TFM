@@ -21,8 +21,16 @@
 
 /* ZONA DE CONTENIDOS */
 
+.sectionHeader {
+	font-family: "Lato-Light";
+	font-size: 1.2em;
+	text-align: center;
+	width: 100%;
+	/*background-image: url(../img/tiny_grid.png);*/
+}
+
 .fondozgz {
-	padding: 10em 0;
+	padding: 6em 0 7em 0;
 	background-image: url(../img/tablet.jpg);
 }
 
@@ -52,6 +60,25 @@ h3.buscar {
 	font-size: 2em;
 }
 
+.aviso, .cerrar {
+	color: #fff;
+	font-family: "Lato-Light", serif;
+	display: block;
+	text-align: center;
+	margin-top: 2em;
+	padding: 1em;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.aviso {
+	background-color: #449D44;
+}
+
+.cerrar {
+	background-color: #373135;
+	cursor: pointer;
+}
 
 .categoria a {
 	font-size: 1.2em;
@@ -179,7 +206,7 @@ input.farmacia {
 
 /* Medline */
 .fondomedline {
-	padding: 10em 0;
+	padding: 6em 0 7em 0;
 	background-image: url(../img/grey_wash_wall.png);
 }
 
@@ -281,7 +308,7 @@ h3.ampliar, h4.ampliar {
 
 /* Healthfinder */
 .fondohealthfinder {
-	padding: 10em 0;
+	padding: 6em 0 7em 0;
 	background-image: url(../img/comida.jpg);
 }
 

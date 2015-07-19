@@ -5,7 +5,7 @@ $(function() {
 //
 // creamos las variables que vayamos a ir necesitando
 // comenzamos capturando el botón que lanza la búsqueda
-var $buscar = $('#buscar');
+var $busquedaAsociacion = $('#busquedaAsociacion');
 // capturamos el dato del formulario
 var $palabra = $('#palabra');
 // enlaces de categorias
@@ -15,7 +15,7 @@ var $contenido = $('#contenidoAsoc');
 // URL base de la consulta
 var $URL = 'http://www.zaragoza.es/buscador/select?';
 
-$buscar.on('click', function () {
+$busquedaAsociacion.on('click', function () {
   // eliminamos el contenido anterior
   $contenido.text("");
   $.ajax({
@@ -55,7 +55,21 @@ $categoria.on('click', function () {
 // función que muestra los resultados
 function resultados(data) { 
   if (data.response.numFound !== 0) {
-    $contenido.toggle();
+
+    $(".aviso").remove();
+    $(".cerrar").remove();
+
+    if ($contenido.css("display", "none")) {
+      $contenido.toggle();
+      $("#buscarAsoc").append('<strong class="aviso">Los resultados aparecen en la parte inferior</strong>');
+      $("#buscarAsoc").append('<strong class="cerrar">Cerrar resultados</strong>');
+      $(".cerrar").on("click", function() {
+        $(".aviso").remove();
+        $(".cerrar").remove();
+        $contenido.toggle();
+      })
+    };
+   
     $.each(data.response, function() {
       $.each(this, function () {
         $.each(this, function (k,v) {   
@@ -89,7 +103,7 @@ function resultados(data) {
 //
 // creamos las variables que vayamos a ir necesitando
 // comenzamos capturando el botón que lanza la búsqueda
-var $buscarCentro = $('#buscarCentro');
+var $buscarCentro = $('#btnBuscarCentro');
 // capturamos el dato del formulario
 var $palabraCentro = $('#palabraCentro');
 // enlaces de categorias
@@ -121,7 +135,21 @@ $buscarCentro.on('click', function () {
 // función que muestra los resultados
 function resultadosCentro(data) { 
   if (data.response.numFound !== 0) {
-    $contenidoCentro.toggle();
+
+   $(".aviso").remove();
+   $(".cerrar").remove();
+
+   if ($contenidoCentro.css("display", "none")) {
+     $contenidoCentro.toggle();
+     $("#buscarCentro").append('<strong class="aviso">Los resultados aparecen en la parte inferior</strong>');
+     $("#buscarCentro").append('<strong class="cerrar">Cerrar resultados</strong>');
+     $(".cerrar").on("click", function() {
+       $(".aviso").remove();
+       $(".cerrar").remove();
+       $contenidoCentro.toggle();
+     })
+   };
+
     // creamos la URL base para permitir la ubicación del centro de salud en el mapa
     $urlMapa = "http://maps.google.com/?q=";
     $.each(data.response, function() {

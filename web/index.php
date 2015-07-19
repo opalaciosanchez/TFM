@@ -2,7 +2,7 @@
 <!-- contenedor de la sección de contenido de la página -->
 <div id="seccion" class="container-fluid">
 	<section class="main">
-
+	<!-- <h2 class="sectionHeader">OPENDATA SALUD</h2> -->
 	<!-- articulo con las búsquedas para Zaragoza Datos abiertos -->
 		<article id="asociaciones" class="main row fondozgz">
 			<div class="container">
@@ -14,13 +14,13 @@
 						<p class="categoria"><a href=#>Cancer</a></p>
 						<p class="categoria"><a href=#>Otras asociaciones de enfermos</a></p>
 					</div>
-					<div class="col-xs-12 col-md-6">
+					<div id="buscarAsoc" class="col-xs-12 col-md-6">
 						<label for="palabra">buscar por palabra clave</label>
 						<p class="help-block">
 							El sistema realizará una búsqueda entre todas las asociaciones de la provincia de Zaragoza
 						</p>
 						<input type="text" class="form-control" id="palabra" name="palabra" placeholder="e.g. alzheimer" autofocus/>
-						<button id="buscar" class="btn btn-default" name="buscar">Buscar</button>
+						<button id="busquedaAsociacion" class="btn btn-default" name="busquedaAsociacion">Buscar</button>
 					</div>
 				</div>
 			</div>
@@ -44,18 +44,18 @@
 				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 				<!-- codigo para la búsqueda de farmacias de guardia -->
 				<form name="php" id="php" action="consulta.php" method="POST" >
-					<label class="sr-only" for="fecha">Introduce una fecha para buscar farmacia de guardia</label>
+					<label class="sr-only" for="datepicker">Introduce una fecha para buscar farmacia de guardia</label>
 					<input class="form-control" type="text" id="datepicker" name="datepicker" placeholder="escoge una fecha ...">
-					<input class="btn btn-default" type="submit" id="buscar" name="buscar" value="Buscar Farmacia"/>
+					<input class="btn btn-default" type="submit" id="buscarFarmacia" name="buscarFarmacia" value="Buscar Farmacia"/>
 				</form>
 			</div>
-			<div class="col-xs-12 col-sm-6 servicios">
+			<div id="buscarCentro" class="col-xs-12 col-sm-6 servicios">
 				<h4>Centros de salud</h4>
 				<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
 				<!-- búsqueda de centros de salud  -->
-				<label class="sr-only" for="fecha">Busca centro de salud por distrito, nombre...</label>
-				<input class="form-control" type="text" id="palabraCentro" name="palabraCentro" placeholder="nombre, distrito ..." autofocus/>
-				<button class="btn btn-default" id="buscarCentro" name="buscarCentro">Buscar Centro de salud</button>
+				<label class="sr-only" for="palabraCentro">Busca centro de salud por distrito, nombre...</label>
+				<input class="form-control" type="text" id="palabraCentro" name="palabraCentro" placeholder="nombre, distrito ..." />
+				<button class="btn btn-default" id="btnBuscarCentro" name="btnBuscarCentro">Buscar Centro de salud</button>
 			</div>
 		</div>
 		</article>
@@ -82,10 +82,10 @@
 						<p class="help-block">
 							El sistema realizará una búsqueda en la completa base de datos de enfermedades Medline en castellano
 						</p>
-						<form id="medline" name="medline" action="consulta.php" method="POST">
-							<input class="form-control" type="text" id="palabraEnfermedad" name="palabraEnfermedad" placeholder="tipo de enfermedad ..." autofocus/>
+						<form id="medlineForm" name="medlineForm" action="consulta.php" method="POST">
+							<input class="form-control" type="text" id="palabraEnfermedad" name="palabraEnfermedad" placeholder="tipo de enfermedad ..." />
 							<input type="hidden" name="buscarTermino" id="buscarTermino" value="buscarTermino" />
-							<input class="btn btn-default" type="submit" id="buscar" name="buscar" value="Buscar"/>
+							<input class="btn btn-default" type="submit" id="buscarEnfermedad" name="buscarEnfermedad" value="Buscar"/>
 						</form>
 					</div>
 				</div>
@@ -134,7 +134,7 @@
 							El sistema realizará una búsqueda en la base de datos de cuidados de Healthfinder en castellano
 						</p>
 						<form id="healthfinderForm" name="healthfinderForm" action="consulta.php" method="POST">
-							<input class="form-control" type="text" id="palabraConsejo" name="palabraConsejo" placeholder="duda sobre salud, enfermedad ..." autofocus/>
+							<input class="form-control" type="text" id="palabraConsejo" name="palabraConsejo" placeholder="duda sobre salud, enfermedad ..." s/>
 							<input type="hidden" name="buscarConsejo" id="buscarConsejo" value="buscarConsejo" />
 							<input class="btn btn-default" type="submit" id="consejo" name="consejo" value="Buscar"/>
 						</form>
