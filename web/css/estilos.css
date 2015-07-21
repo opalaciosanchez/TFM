@@ -25,6 +25,14 @@
 
 /* ZONA DE CONTENIDOS */
 
+p.fuente {
+	font-family: "Aleo", serif;
+	text-align: center;
+	font-size: 1em;
+	color: #373135;
+	margin-top: 2em;
+}
+
 .sectionHeader {
 	font-family: "Lato-Light";
 	font-size: 1.2em;
@@ -144,7 +152,7 @@ input, button {
 }
 
 /* Separador servicios e información */
-#servicios, #separador {
+#servicios, #separador, #proyecto {
 	padding: 3em 0 5em 0;
 	background-image: url(../img/tiny_grid.png);
 }
@@ -155,7 +163,7 @@ input, button {
 	color: #000;
 }
 
-#servicios p, #separador p {
+#servicios p, #separador p, #proyecto p {
 	font-family: "Lato-Light", sans-serif;
 	font-size: 1.2em;
 	color: #000;
@@ -172,6 +180,12 @@ input, button {
 
 .servicios h4 {
 	font-size: 1.2em;
+}
+
+#proyecto p.destacado {
+	text-align: center;
+	font-family: "Aleo", serif;
+	padding: 0 6em;
 }
 
 /* Otros servicios: Farmacias */
@@ -198,6 +212,11 @@ input.farmacia {
 
 #farmacias table {
 	font-family: "Lato-light", sans-serif;
+}
+
+#farmacias p {
+	font-family: "Lato-Light", sans-serif;
+	text-align: center;
 }
 
 /* Otros servicios: Centros de salud */
@@ -281,6 +300,14 @@ h3.ampliar, h4.ampliar {
 #resultadosMedline .llamado {
 	font-family: "Lato-Regular", sans-serif;
 	font-size: 1.1em;
+}
+
+#resultadosMedline p.fuente, #resultadosHealthfinder p.fuente {
+	font-family: "Aleo", serif;
+	text-align: center;
+	font-size: 1em;
+	color: #373135;
+	margin-top: 2em;
 }
 
 #resultadosMedline li {

@@ -33,8 +33,10 @@ function salidaFarmacia($resultado) {
 
 	}
 	// cerramos la tabla id="farmacias"
-	echo '</table></div>';
+	echo "</table>
+	<p class='fuente'>Fuente: <a href='http://www.zaragoza.es/ciudad/risp/' target='_blank'>Ayuntamiento de Zaragoza</a></p></div>";
 }
+
 
 ?>
 
@@ -179,7 +181,8 @@ function salidaDatos($resultado,$tagName) {
 		// cerramos la sección
 		echo "</div></article>";
 	}
-	echo "</div></div>";
+	echo "</div>
+	<p class='fuente'><a href='http://www.nlm.nih.gov/medlineplus/spanish/'>Fuente de los datos: MedlinePlus</a>. Biblioteca Nacional de Medicina de los EE.UU.</p></div>";
 }
 
 /* obtener todas las categorías */
@@ -306,7 +309,9 @@ function salidaConsejos($xml) {
 		echo $baseTool[$i]->Content;
 		echo "</article>";
 	}
-	echo "</div></div>";
+	echo "</div>
+	<p class='fuente'><a href='http://healthfinder.gov/'>Fuente de los datos: Healthfinder.gov</a>. Office of Disease prevention and health promotion</p>
+	<img src='img/logo.png' alt='Healthfinder logo'/></div>";
 
 }
 

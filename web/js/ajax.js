@@ -69,7 +69,7 @@ function resultados(data) {
           $contenido.toggle();
       });
       $(".cerrar").on("keypress", function(e) {
-        if(e.which == 13) {
+        if(e.which == 13 || e.which == 32) {
           $(".aviso").remove();
           $(".cerrar").remove();
           $contenido.toggle();
@@ -99,6 +99,8 @@ function resultados(data) {
         });
       });
     });
+
+    $contenido.append("<p class='fuente'>Fuente: <a href='http://www.zaragoza.es/ciudad/risp/' target='_blank'>Ayuntamiento de Zaragoza</a></p>");
   } else {
     $contenido.append('<h4>No se han obtenido resultados en la búsqueda</h4>');
   }
@@ -156,7 +158,7 @@ function resultadosCentro(data) {
          $contenidoCentro.toggle();
      });
      $(".cerrar").on("keypress", function(e) {
-       if(e.which == 13) {
+       if(e.which == 13 || e.which == 32) {
          $(".aviso").remove();
          $(".cerrar").remove();
          $contenidoCentro.toggle();
@@ -189,6 +191,9 @@ function resultadosCentro(data) {
         });
       });
     });
+
+    $contenidoCentro.append("<p class='fuente'>Fuente: <a href='http://www.zaragoza.es/ciudad/risp/' target='_blank'>Ayuntamiento de Zaragoza</a></p>");
+  
   } else {
     $contenidoCentro.append('<h4>No se han obtenido resultados en la búsqueda</h4>');
   }
@@ -207,7 +212,7 @@ $contenidoMostrar.on('click tab', function () {
 });
 // si la tecla pulsada es enter se actúa igual
 $contenidoMostrar.on("keypress", function(e) {
-  if(e.which == 13) {
+  if(e.which == 13 || e.which == 32) {
     $(this).nextUntil('.ampliar').toggleClass('oculto');
   }
 });

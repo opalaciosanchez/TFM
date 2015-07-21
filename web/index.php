@@ -17,7 +17,7 @@
 					<div id="buscarAsoc" class="col-xs-12 col-md-6">
 						<label for="palabra">buscar por palabra clave</label>
 						<p class="help-block">
-							El sistema realizará una búsqueda entre todas las asociaciones de la provincia de Zaragoza
+							El sistema realizará una búsqueda entre todas las asociaciones de la ciudad de Zaragoza
 						</p>
 						<input type="text" class="form-control" id="palabra" name="palabra" placeholder="e.g. alzheimer" autofocus/>
 						<button id="busquedaAsociacion" class="btn btn-default" name="busquedaAsociacion">Buscar</button>
@@ -45,7 +45,7 @@
 				<!-- codigo para la búsqueda de farmacias de guardia -->
 				<form name="php" id="php" action="consulta.php" method="POST" >
 					<label class="sr-only" for="datepicker">Introduce una fecha para buscar farmacia de guardia</label>
-					<input class="form-control" type="text" id="datepicker" name="datepicker" placeholder="escoge una fecha ...">
+					<input class="form-control" type="date" id="datepicker" name="datepicker" placeholder="escoge una fecha ...">
 					<input class="btn btn-default" type="submit" id="buscarFarmacia" name="buscarFarmacia" value="Buscar Farmacia"/>
 				</form>
 			</div>
@@ -129,7 +129,7 @@
 						</p>
 					</div>
 					<div class="col-xs-12 col-md-6">
-						<label for="palabraConsejo">buscar por enfermedad</label>
+						<label for="palabraConsejo">buscar por tópico</label>
 						<p class="help-block">
 							El sistema realizará una búsqueda en la base de datos de cuidados de Healthfinder en castellano
 						</p>
@@ -142,6 +142,30 @@
 				</div>
 			</div>
 		</article>
+
+		<article id="proyecto" class="main row">
+		<div class="container">
+			<h3 class="serviciosh3">Sobre el proyecto</h3>
+			<p>
+				Este proyecto nace de una necesidad. Nace de la escasez de recursos abiertamente disponibles de consulta para los usuarios (tanto pacientes como familiares de pacientes) que ayuden a enfrentar de mejor forma el proceso que representa una enfermedad, su evolución o la calidad de vida vinculada a ella.
+			</p>
+			<p>
+				Por supuesto, la intención no es sustituir de ningún modo la información ofrecida por el especialista, sino complementarla en la medida de la posible, además de ofrecer una batería de recursos, en este caso locales a Zaragoza, para evitar búsquedas "abiertas" en Internet.
+				¿Dónde hay una farmacia de guardia? ¿Existen asociaciones de enfermos ligados a mi enfermedad? Entre otros servicios, esta información es ofrecida, mediante una sencilla búsqueda en la plataforma.
+			</p>
+			<p>
+				¿De dónde procede esta información? Los datos aquí obtenidos, formateados y ofrecidos de una forma sencilla y agradable se han buscado, analizado y adaptado en un largo proceso bajo dos premisas: que la información fuese <strong>oficial</strong> (y por lo tanto fiable) y que además esa misma información fuese <strong>abierta</strong>. Abierta en el sentido de disponible, sin restricciones de uso, modificación o compartición. Basada en el concepto de Open Data (datos abiertos) sobre el que se ha insertado información bajo la forma de enlaces en el menú inferior de la página. Datos abiertos significan democracia, significan transparencia, y significan recursos para los ciudadanos.
+			</p>
+			<div class="col-xs-12 servicios">
+				<h4>Datos abiertos y disponibles</h4>
+				<span class="glyphicon glyphicon glyphicon-send" aria-hidden="true"></span>
+				<p class="destacado">
+					Eres libre de usar la información obtenida en este sitio web como prefieras: leela, imprímela o compártela. Úsala para tu beneficio propio o el de otros. No tienes ninguna restricción. Toda ella es libre y abierta. Es tuya.
+				</p>
+			</div>
+		</div>
+		</article>
+
 	</section>
 </div>
 
