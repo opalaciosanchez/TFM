@@ -131,7 +131,8 @@ $buscarCentro.on('click', function () {
     ifModified: true,
     url: $URLCentro,
     // insertamos las variables que realizan la consulta. ATENCIÓN A LOS ESPACIOS entre elementos
-    data: { 'wt':'json','q':'title:Salud AND (text:' + $palabraCentro.val() + ') AND category:Recursos' },
+    // data: { 'wt':'json','q':'title:Salud AND (text:' + $palabraCentro.val() + ') AND category:Recursos' },
+    data: { 'wt':'json','q':'title:' + $palabraCentro.val() + ' text:' + $palabraCentro.val() + ' AND category:Recursos','fq':'temas_smultiple:(\"Salud P\\u00fablica y Consumo\") AND subtemas_smultiple:(\"Centros de Salud\" OR \"Hospitales\") '},
     success: resultadosCentro,
     dataType: 'jsonp',
     jsonp: 'json.wrf',
@@ -191,7 +192,6 @@ function resultadosCentro(data) {
         });
       });
     });
-
     $contenidoCentro.append("<p class='fuente'>Fuente: <a href='http://www.zaragoza.es/ciudad/risp/' target='_blank'>Ayuntamiento de Zaragoza</a></p>");
   
   } else {

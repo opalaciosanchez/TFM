@@ -38,7 +38,6 @@
 						<li><a href="index.php#servicios">Servicios</a></li>
 						<li><a href="index.php#medline">Enfermedades</a></li>
 						<li><a href="index.php#healthfinder">Salud</a></li>
-						<li><a href="index.php#proyecto">El proyecto</a></li>
 					</ul>
 				</div>
 			</div>

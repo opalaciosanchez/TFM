@@ -37,7 +37,7 @@
 			<h3 class="serviciosh3">Otros servicios en la provincia de Zaragoza</h3>
 			<p>
 				La plataforma de Open Data Salud le permite además de localizar asociaciones de enfermos, hacer uso de la información abierta proporcionada por el Ayuntamiento de Zaragoza para localizar otros tipos de servicios sanitarios.
-				En concreto, la siguiente sección le permite localizar farmacias de guardia, simplemente insertando una fecha, o ubicar de forma sencilla en el mapa los centros de salud de la zona de Zaragoza que indique.
+				En concreto, la siguiente sección le permite localizar farmacias de guardia, simplemente insertando una fecha, o localizar información de interés (teléfono, ubicación en mapa, etc.) acerca de servicios sanitarios por zonas o nombre (hospitales, centros de salud...).
 			</p>
 			<div class="col-xs-12 col-sm-6 servicios">
 				<h4>Farmacias de guardia</h4>
@@ -50,10 +50,10 @@
 				</form>
 			</div>
 			<div id="buscarCentro" class="col-xs-12 col-sm-6 servicios">
-				<h4>Centros de salud</h4>
+				<h4>Servicios sanitarios</h4>
 				<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
 				<!-- búsqueda de centros de salud  -->
-				<label class="sr-only" for="palabraCentro">Busca centro de salud por distrito, nombre...</label>
+				<label class="sr-only" for="palabraCentro">Busca servicio por distrito, nombre, tipo ...</label>
 				<input class="form-control" type="text" id="palabraCentro" name="palabraCentro" placeholder="nombre, distrito ..." />
 				<button class="btn btn-default" id="btnBuscarCentro" name="btnBuscarCentro">Buscar Centro de salud</button>
 			</div>
@@ -160,7 +160,7 @@
 				<h4>Datos abiertos y disponibles</h4>
 				<span class="glyphicon glyphicon glyphicon-send" aria-hidden="true"></span>
 				<p class="destacado">
-					Eres libre de usar la información obtenida en este sitio web como prefieras: leela, imprímela o compártela. Úsala para tu beneficio propio o el de otros. No tienes ninguna restricción. Toda ella es libre y abierta. Es tuya.
+					Eres libre de usar la información obtenida en este sitio web como prefieras. Úsala para tu beneficio propio o el de otros. No tienes ninguna restricción. Toda ella es libre y abierta. Todo el contenido, así como la plataforma está sujeta a licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons BY (uso libre con atribución)</a>
 				</p>
 			</div>
 		</div>
