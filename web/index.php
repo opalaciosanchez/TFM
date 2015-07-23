@@ -55,7 +55,7 @@
 				<!-- búsqueda de centros de salud  -->
 				<label class="sr-only" for="palabraCentro">Busca servicio por distrito, nombre, tipo ...</label>
 				<input class="form-control" type="text" id="palabraCentro" name="palabraCentro" placeholder="nombre, distrito ..." />
-				<button class="btn btn-default" id="btnBuscarCentro" name="btnBuscarCentro">Buscar Centro de salud</button>
+				<button class="btn btn-default" id="btnBuscarCentro" name="btnBuscarCentro">Buscar Servicio</button>
 			</div>
 		</div>
 		</article>
