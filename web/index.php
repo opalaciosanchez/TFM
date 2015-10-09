@@ -45,7 +45,7 @@
 				<!-- codigo para la búsqueda de farmacias de guardia -->
 				<form name="php" id="php" action="consulta.php" method="POST" >
 					<label class="sr-only" for="datepicker">Introduce una fecha para buscar farmacia de guardia</label>
-					<input class="form-control" type="date" id="datepicker" name="datepicker" placeholder="escoge una fecha ...">
+					<input class="form-control" type="text" id="datepicker" name="datepicker" placeholder="escoge una fecha ...">
 					<input class="btn btn-default" type="submit" id="buscarFarmacia" name="buscarFarmacia" value="Buscar Farmacia"/>
 				</form>
 			</div>

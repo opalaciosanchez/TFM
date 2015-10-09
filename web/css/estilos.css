@@ -3,6 +3,12 @@
 
 /* NAVEGACIÓN */
 
+/* asegura la accesibilidad al entrar en foco un elemento */
+:focus { 
+	outline: solid #97BDCB;
+	padding: 5px;
+}
+
 .navbar-header {
 	font-family: "Lato-Light", sans-serif;
 	text-transform: uppercase;
