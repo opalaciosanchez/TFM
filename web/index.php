@@ -2,7 +2,7 @@
 <!-- contenedor de la sección de contenido de la página -->
 <div id="seccion" class="container-fluid">
 	<section class="main">
-	<!-- <h2 class="sectionHeader">OPENDATA SALUD</h2> -->
+		<h2 class="hideHeader">INFORMACIÓN SANITARIA ABIERTA</h2>
 	<!-- articulo con las búsquedas para Zaragoza Datos abiertos -->
 		<article id="asociaciones" class="main row fondozgz">
 			<div class="container">
@@ -134,7 +134,7 @@
 							El sistema realizará una búsqueda en la base de datos de cuidados de Healthfinder en castellano
 						</p>
 						<form id="healthfinderForm" name="healthfinderForm" action="consulta.php" method="POST">
-							<input class="form-control" type="text" id="palabraConsejo" name="palabraConsejo" placeholder="duda sobre salud, enfermedad ..." s/>
+							<input class="form-control" type="text" id="palabraConsejo" name="palabraConsejo" placeholder="duda sobre salud, enfermedad ..."/>
 							<input type="hidden" name="buscarConsejo" id="buscarConsejo" value="buscarConsejo" />
 							<input class="btn btn-default" type="submit" id="consejo" name="consejo" value="Buscar"/>
 						</form>

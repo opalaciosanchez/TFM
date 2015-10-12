@@ -4,7 +4,7 @@
 /* NAVEGACIÓN */
 
 /* asegura la accesibilidad al entrar en foco un elemento */
-:focus { 
+:focus {
 	outline: solid #97BDCB;
 	padding: 5px;
 }
@@ -30,6 +30,10 @@
 }
 
 /* ZONA DE CONTENIDOS */
+
+.hideHeader {
+	display: none;
+}
 
 p.fuente {
 	font-family: "Aleo", serif;
@@ -117,7 +121,7 @@ input, button {
 	font-family: "Lato-Regular", sans-serif;
 }
 
-#asociaciones button.btn, #servicios input.btn, #servicios button.btn, 
+#asociaciones button.btn, #servicios input.btn, #servicios button.btn,
 #medline input.btn, #healthfinder input.btn
 {
 	width: 100%;
