@@ -54,6 +54,7 @@ p.fuente {
 .fondozgz {
 	padding: 6em 0 7em 0;
 	background-image: url(../img/tablet.jpg);
+	background-color: #000;
 }
 
 #asociaciones label, #medline label, #healthfinder label{
@@ -69,6 +70,7 @@ p.fuente {
 
 #buscarAsoc p.help-block {
 	color: #fff;
+	font-family: "Lato-Regular", sans-serif;
 }
 
 .buscar {
@@ -108,12 +110,12 @@ h3.buscar {
 
 .categoria a {
 	font-size: 1.2em;
-	color: #fff;
+	color: #FDD740;
 	font-family: "Lato-Light", sans-serif;
 }
 
 .categoria a:hover {
-	color: #999;
+	color: #88D3F5;
 	text-decoration: none;
 }
 
@@ -129,7 +131,7 @@ input, button {
 }
 
 .help-block {
-	font-family: Lato-Light, sans-serif;
+	font-family: "Lato-Regular", sans-serif;
 	color: #fff;
 	font-size: 1.3em;
 	margin: 1.2em 0;
@@ -245,12 +247,13 @@ input.farmacia {
 .fondomedline {
 	padding: 6em 0 7em 0;
 	background-image: url(../img/grey_wash_wall.png);
+	background-color: #000;
 }
 
 #medline p {
 	font-size: 1.2em;
 	color: #fff;
-	font-family: "Lato-Light", sans-serif;
+	font-family: "Lato-Regular", sans-serif;
 	text-align: justify;
 }
 
@@ -355,6 +358,7 @@ h3.ampliar, h4.ampliar {
 .fondohealthfinder {
 	padding: 6em 0 7em 0;
 	background-image: url(../img/comida.jpg);
+	background-color: #000;
 }
 
 #healthfinder p {
@@ -428,7 +432,7 @@ footer.container-fluid {
 .pie h3 {
 	font-family: Aleo-Light, serif;
 	font-size: 1em;
-	color: #999;
+	color: #fff;
 	text-transform: uppercase;
 }
 
