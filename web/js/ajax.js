@@ -23,13 +23,13 @@ $busquedaAsociacion.on('click', function () {
     ifModified: true,
     url: $URL,
     // insertamos las variables que realizan la consulta. ATENCIÓN A LOS ESPACIOS entre elementos
-    data: {'wt':'json', 'q':'title:' + $palabra.val() + ' text:' + $palabra.val() + ' AND category:Asociaciones'},
+    data: {'wt':'json', 'q':'title:' + $palabra.val() + ' text:' + $palabra.val() + ' AND category:Asociaciones', 'last_modified':''},
     success: resultados,
     dataType: 'jsonp',
     jsonp: 'json.wrf',
     error: function(xhr) {
       alert(xhr.responseText);
-    } 
+    }
    });
 });
 
@@ -42,18 +42,18 @@ $categoria.on('click', function () {
     ifModified: true,
     url: $URL,
     // insertamos las variables que realizan la consulta. ATENCIÓN A LOS ESPACIOS entre elementos
-    data: {'wt':'json', 'q':'title:' +  $(this).text() + ' text:' +  $(this).text() + ' AND category:Asociaciones'},
+    data: {'wt':'json', 'q':'title:' +  $(this).text() + ' text:' +  $(this).text() + ' AND category:Asociaciones', 'last_modified':''},
     success: resultados,
     dataType: 'jsonp',
     jsonp: 'json.wrf',
     error: function(xhr) {
       alert(xhr.responseText);
-    } 
+    }
    });
 });
 
 // función que muestra los resultados
-function resultados(data) { 
+function resultados(data) {
   if (data.response.numFound !== 0) {
 
     $(".aviso").remove();
@@ -75,11 +75,11 @@ function resultados(data) {
           $contenido.toggle();
         }
       });
-    };
-   
+    }
+
     $.each(data.response, function() {
       $.each(this, function () {
-        $.each(this, function (k,v) {   
+        $.each(this, function (k,v) {
           switch (k) {
             case 'title':
               $contenido.append('<h4>' + v + '</h4>');
@@ -93,9 +93,10 @@ function resultados(data) {
             case 'mail_s':
               $contenido.append('<p><strong>Email </strong>' + v + '</p>');
               break;
-            default:
+            case 'last_modified':
+              $contenido.append('<p><strong>Actualizado </strong>' + v + '</p>');
               break;
-          }       
+          }
         });
       });
     });
@@ -132,18 +133,18 @@ $buscarCentro.on('click', function () {
     url: $URLCentro,
     // insertamos las variables que realizan la consulta. ATENCIÓN A LOS ESPACIOS entre elementos
     // data: { 'wt':'json','q':'title:Salud AND (text:' + $palabraCentro.val() + ') AND category:Recursos' },
-    data: { 'wt':'json','q':'title:' + $palabraCentro.val() + ' text:' + $palabraCentro.val() + ' AND category:Recursos','fq':'temas_smultiple:(\"Salud P\\u00fablica y Consumo\") AND subtemas_smultiple:(\"Centros de Salud\" OR \"Hospitales\") '},
+    data: { 'wt':'json','q':'title:' + $palabraCentro.val() + ' text:' + $palabraCentro.val() + ' AND category:Recursos','fq':'temas_smultiple:(\"Salud P\\u00fablica y Consumo\") AND subtemas_smultiple:(\"Centros de Salud\" OR \"Hospitales\")','last_modified':''},
     success: resultadosCentro,
     dataType: 'jsonp',
     jsonp: 'json.wrf',
     error: function(xhr) {
       alert(xhr.responseText);
-    } 
+    }
    });
 });
 
 // función que muestra los resultados
-function resultadosCentro(data) { 
+function resultadosCentro(data) {
   if (data.response.numFound !== 0) {
 
    $(".aviso").remove();
@@ -165,13 +166,13 @@ function resultadosCentro(data) {
          $contenidoCentro.toggle();
        }
      });
-   };
+   }
 
     // creamos la URL base para permitir la ubicación del centro de salud en el mapa
     $urlMapa = "http://maps.google.com/?q=";
     $.each(data.response, function() {
       $.each(this, function () {
-        $.each(this, function (k,v) { 
+        $.each(this, function (k,v) {
           // recorremos todos los elementos del interior de este objeto y comparamos su clave con la que nos interesa
           // en caso de coincidir, obtenemos su información para nuestro uso
           switch (k) {
@@ -187,13 +188,16 @@ function resultadosCentro(data) {
             case 'coordenadas_p':
               $contenidoCentro.append('<p><a target="_blank" href="' + $urlMapa + v + '"><button class="btn btn-default">Ubicar en mapa</button></a></p>');
               break;
-          } 
-          
+            case 'last_modified':
+              $contenidoCentro.append('<p><strong>Actualizado el: </strong>' + v + '</p>');
+              break;
+          }
+
         });
       });
     });
     $contenidoCentro.append("<p class='fuente'>Fuente: <a href='http://www.zaragoza.es/ciudad/risp/' target='_blank'>Ayuntamiento de Zaragoza</a></p>");
-  
+
   } else {
     $contenidoCentro.append('<h4>No se han obtenido resultados en la búsqueda</h4>');
   }
